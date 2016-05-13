@@ -1,6 +1,6 @@
 ---
 comments: true
-date: {  }
+date: 2015-08-10
 excerpt: 'test514.'
 layout: post
 tag:
