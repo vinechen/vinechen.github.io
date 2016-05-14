@@ -26,7 +26,10 @@ sass:
   style:            compressed
 
 # Comments
-disqus_shortname:   vinechen
+comments :
+provider : duoshuo
+duoshuo : 
+short_name : chen-wen
 
 # Social
 # if you don't have any of social below, comment the line.
