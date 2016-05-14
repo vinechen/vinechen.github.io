@@ -38,10 +38,8 @@ layout: compress
                 </div>
             </div>
         </div>
-<div class="ds-thread" data-thread-key="{{ page.id }}"  data-title="{{ page.title }} | {{ site.title }}" data-url="{{ site.url }}{{ page.url }}"></div>
-<script>var duoshuoQuery = {short_name:"chen-wen"};</script>
-<script src="http://static.duoshuo.com/embed.js"></script>
-</header>
+        {% if page.comments and site.disqus_shortname %}<section id="disqus_thread" class="animated fadeInUp"></section><!-- /#disqus_thread -->{% endif %}
+    </header>
     {% include scripts.html %}
     {% if site.mathjax == true %}
     <!-- MathJax -->
