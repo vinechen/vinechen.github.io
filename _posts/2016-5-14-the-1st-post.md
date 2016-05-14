@@ -2,8 +2,9 @@
 tags: []
 layout: post
 title: 第一篇文章要严肃一点
-category: 
+category: null
 ---
+这是第一行可能会变成摘要
 > 这是引用
 
 #### 其实也算是测试
