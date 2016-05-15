@@ -8,4 +8,4 @@ tags: [daily]
 ---
 听到钢琴就会想起很多事，
 
-(地狱在身后)[https://zhuanlan.zhihu.com/p/19569283]
+[地狱在身后](https://zhuanlan.zhihu.com/p/19569283)
