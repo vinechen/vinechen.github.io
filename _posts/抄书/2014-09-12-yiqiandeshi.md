@@ -4,7 +4,8 @@ title: 以前的事
 date: 2014-09-12 23:52
 author: 史铁生
 comments: true
-tag:[抄书]
+tags:[抄书]
+categories:[抄书]
 ---
 一、玩具
 
