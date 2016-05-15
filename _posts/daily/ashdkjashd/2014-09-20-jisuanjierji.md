@@ -2,7 +2,7 @@
 layout: post
 title: 计算机二级
 date: 2014-09-20 16:24
-excerpt: "(＞﹏＜)"
+excerpt: "考试"
 comments: true
 tags: [daily]
 ---
