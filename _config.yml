@@ -3,10 +3,10 @@ title:              Vine Chen
 bio:                'Know Yourself'
 description:        "A man with long fingers."
 reading_time:       true
-words_per_minute:   300
+words_per_minute:   30
 logo:               'assets/img/logo.png'
 background:         'assets/img/placeholder-big.jpg'
-tiled_bg:           true   # Set this true if you want to tile your background image, otherwise it will be covered
+tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             zh_CN
 url:                http://vinechen.com
 
