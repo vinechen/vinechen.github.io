@@ -2,8 +2,9 @@
 layout: post
 title: 告别信
 date: 2014-07-28
+author: 马尔克斯
 excerpt: "如果有一刹那，上帝忘记我是一只布偶并赋予我片刻生命，我可能不会说出我心中的一切所想，但我必定会思考我所说的一切。"
-tags: [test]
+tags: [抄书]
 comments: true
 published: true
 ---
