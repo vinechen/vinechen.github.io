@@ -2,7 +2,6 @@
 layout: post
 title: 迎新怀旧
 date: 2014-09-06 09:46
-author: vinechen
 excerpt: "这是草稿"
 tags: [daily]
 comments: true
