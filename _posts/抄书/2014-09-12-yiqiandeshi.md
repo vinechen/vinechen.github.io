@@ -3,8 +3,9 @@ layout: post
 title: 以前的事
 date: 2014-09-12 23:52
 author: 史铁生
+excerpt: "我有生的第一个玩具是一只红色的小汽车"
 comments: true
-tags:[抄书]
+tags: [抄书]
 ---
 一、玩具
 
