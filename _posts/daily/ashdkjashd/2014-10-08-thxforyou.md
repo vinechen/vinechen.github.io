@@ -1,6 +1,6 @@
 ---
 layout: post
-title: thx
+title: thanks
 date: 2014-10-08 00:09
 excerpt: "感觉要经常更新"
 tags: [daily]
