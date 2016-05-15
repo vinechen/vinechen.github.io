@@ -5,7 +5,6 @@ date: 2014-09-12 23:52
 author: 史铁生
 comments: true
 tags:[抄书]
-categories:[抄书]
 ---
 一、玩具
 
