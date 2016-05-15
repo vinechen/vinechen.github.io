@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 12.22
+title: 十二月二十二日
 date: 2015-12-23 23:33
 comments: true
 excerpt: "截图"
