@@ -1,10 +1,11 @@
 ---
 layout: post
-title: hi ,fresh fish
+title: hi fresh fish
 date: 2014-09-21 00:38
 excerpt:"招新"
 comments: true
 tags: [daily]
+
 ---
 招新微博√
 
@@ -16,4 +17,4 @@ tags: [daily]
 
 招新复试
 
-&nbsp;
+ 
