@@ -1,9 +1,9 @@
 ---
 layout: post
-title: thx for your reading
-date: 2014-10-08 00:09
+title: 后来呢啊啊啊
+date: 2014-09-30 18:03
 comments: true
-excerpt: "不过明天又是新的一天
+excerpt: "后来回家"
 tags: [daily]
 
 ---
