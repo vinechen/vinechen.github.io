@@ -1,6 +1,6 @@
 ---
-layout: project
+layout: page
 title: All Projects
-excerpt: "A List of Projects"
+excerpt: A List of Projects
 ---
 nothing but [this blog](http://www.vinechen.com)
