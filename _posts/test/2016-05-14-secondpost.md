@@ -22,3 +22,4 @@ published: true
 
 ***
 
+![测试图片](http://vinechen.com/16-5-21/211448.jpg)
