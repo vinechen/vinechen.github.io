@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: page
 title: All Projects
 excerpt: A List of Projects
 ---
@@ -8,7 +8,7 @@ excerpt: A List of Projects
 
 |   Name    |     Use     |  Size  |                   Link                   |
 | :-------: | :---------: | :----: | :--------------------------------------: |
-|  Typora   | MarkDown编辑器 | 33.3Mb | [Download](http://img.vinechen.com/typora-setup.exe)> |
-|  Gifcam   |    动态图捕捉    | 1.52Mb | [Download](http://img.vinechen.com/GifCam.exe)> |
-| Potplayer |    视频播放器    | 19.5Mb | [Download](http://potplayer.daum.net/?lang=zh_CN)> |
+|  Typora   | MarkDown编辑器 | 33.3Mb | [Download>](http://img.vinechen.com/typora-setup.exe) |
+|  Gifcam   |    动态图捕捉    | 1.52Mb | [Download>](http://img.vinechen.com/GifCam.exe) |
+| Potplayer |    视频播放器    | 19.5Mb | [Download>](http://potplayer.daum.net/?lang=zh_CN) |
 
