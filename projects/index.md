@@ -1,7 +1,10 @@
 ---
-layout: page
+layout: post
 title: All Projects
 excerpt: A List of Projects
+date: 2016-05-22
+comments: true
+published: true
 ---
 
 ## **Excellent Tools List**
