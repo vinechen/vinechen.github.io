@@ -8,13 +8,24 @@ comments: true
 published: true
 ---
 
-## **Excellent Tools List**
+## **Excellent Window Tools List**
 
 | Name      | Use         | Size    | Link                                     |
 | :-------- | :---------- | :------ | :--------------------------------------- |
 | Typora    | MarkDown编辑器 | 33.3Mb  | [Download](http://img.vinechen.com/typora-setup.exe)> |
 | Gifcam    | 动态图捕捉       | 1.52Mb  | [Download](http://img.vinechen.com/GifCam.exe)> |
 | Potplayer | 视频播放器       | 19.5Mb  | [Download](http://potplayer.daum.net/?lang=zh_CN)> |
-| 硕鼠Nano    | 在线视频下载地址提取  | website | [Go>](http://www.flvcd.com/)             |
+| Instapaper  | 优秀的稍后阅读应用    | ……      | ……                                       |
 | 未完待续      | 欢迎评论补充      | ……      | ……                                       |
 
+## **Excellent Mac Tools List**
+
+| Name      | Use         | Size    | Link                                     |
+| :-------- | :---------- | :------ | :--------------------------------------- |
+| waiting   | for         | the     | update                                   |
+
+## **Excellent Website Tools List**
+
+| Name      | Use         | Link                                     |
+| :-------- | :---------- | :--------------------------------------- |
+| 硕鼠Nano  | 在线视频下载链接提取  | [Go>](http://www.flvcd.com/) |
