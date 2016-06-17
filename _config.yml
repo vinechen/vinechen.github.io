@@ -60,7 +60,7 @@ short_name : vinechen
 #xmpp:              username@server.com
 twitter:            IdeaMeet
 weibo:             234960910
-github:             vinechen
+#github:             vinechen
 email:            newnehc@live.com
 
 # Gems
