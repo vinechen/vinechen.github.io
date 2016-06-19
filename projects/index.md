@@ -16,6 +16,7 @@ published: true
 | Gifcam    | 动态图捕捉       | 1.52Mb  | [Download](http://img.vinechen.com/GifCam.exe)> |
 | Potplayer | 视频播放器       | 19.5Mb  | [Download](http://potplayer.daum.net/?lang=zh_CN)> |
 | Instapaper  | 优秀的稍后阅读应用    | ……      | ……                                       |
+| 1clipboard  | 剪贴板管理应用| 49.5Mb     | [Download](http://1clipboard.io)>  |
 | 未完待续      | 欢迎评论补充      | ……      | ……                                       |
 
 ## **Excellent Mac Tools List**
