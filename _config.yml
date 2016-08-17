@@ -1,9 +1,9 @@
 # Site
 title:              Vine Chen
 bio:                'Know Yourself'
-description:        "A man with long fingers."
+description:        "一个手指特长的人."
 reading_time:       true
-words_per_minute:   30
+words_per_minute:   20
 logo:               'assets/img/logo.png'
 background:         false
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
@@ -60,7 +60,7 @@ short_name : vinechen
 #xmpp:              username@server.com
 twitter:            IdeaMeet
 weibo:             234960910
-#github:             vinechen
+github:             vinechen
 email:            newnehc@live.com
 
 # Gems
