@@ -1,5 +1,5 @@
 ---
-layout: project
-title: All Project
-excerpt: "A List of Project"
+layout: project-list
+title: All Projects
+excerpt: "A List of Projects"
 ---
