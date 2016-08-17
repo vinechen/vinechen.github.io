@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 一些实用的小工具
+title: 整理的一些实用的小工具
 excerpt: 多是小众应用，不过实用
 published: true
-date: 2016-05-23
+date: 2016-04-23
 comments: true
 published: true
 
