@@ -25,14 +25,11 @@ sass:
   sass_dir:         _sass
   style:            compressed
 
-# 网站统计
-analytics :
-baidu : 
-siteid : cdd78ece1b4e97763c84a6e44165efcd
+
 # Comments
 comments :
 provider : duoshuo
-duoshuo : 
+duoshuo :
 short_name : vinechen
 
 # Social
@@ -45,7 +42,7 @@ short_name : vinechen
   #ad-slot:
 #bing-verify:
 #hackernews:        username
-#facebook:           
+#facebook:
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
 #linkedin:          username
 #xing:              username
