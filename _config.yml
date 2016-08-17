@@ -26,6 +26,9 @@ sass:
   style:            compressed
 
 
+# Google services
+google_analytics : UA-82676305-1
+
 # Comments
 comments :
 provider : duoshuo
