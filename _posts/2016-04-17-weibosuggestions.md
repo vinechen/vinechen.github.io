@@ -34,4 +34,4 @@ published: true
 
 ### 五、未完待续
 
-​	waiting for the update…
+​	waiting for the update….
