@@ -5,7 +5,7 @@ date: 2016-08-10
 excerpt: "2016年已经过去62%了"
 tags: [作品]
 project: true
-feature: http://img.vinechen.com/WhatsHappening_header_1.gif
+feature: http://img.vinechen.com/%E8%BF%9B%E5%BA%A6%20850x505.png
 comments: true
 published: true
 ---
