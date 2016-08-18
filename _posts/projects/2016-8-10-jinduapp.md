@@ -4,6 +4,8 @@ title: 进度·App
 date: 2016-08-10
 excerpt: "2016年已经过去62%了"
 tags: [作品]
+project: true
+feature: http://img.vinechen.com/WhatsHappening_header_1.gif
 comments: true
 published: true
 ---
