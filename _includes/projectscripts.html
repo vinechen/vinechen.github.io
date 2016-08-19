@@ -1,11 +1,13 @@
+<html>
+<head>
     <!-- JS -->
-    <script src="{{ site.url }}/assets/js/jquery-1.12.0.min.js"></script>
+    <!-- <script src="{{ site.url }}/assets/js/jquery-1.12.0.min.js"></script>
     <script src="{{ site.url }}/assets/js/jquery.dlmenu.min.js"></script>
     <script src="{{ site.url }}/assets/js/jquery.goup.min.js"></script>
     <script src="{{ site.url }}/assets/js/jquery.magnific-popup.min.js"></script>
     <script src="{{ site.url }}/assets/js/jquery.fitvid.min.js"></script>
     <script src="{{ site.url }}/assets/js/scripts.js"></script>
-    {% if site.google.analytics %}
+    {% if site.google.analytics %} -->
     <!-- Asynchronous Google Analytics snippet -->
     <!-- <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -16,7 +18,8 @@
       ga('require', 'linkid', 'linkid.js');
       ga('send', 'pageview');
     </script> -->
-
+</head>
+<body>
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -27,7 +30,9 @@
   ga('send', 'pageview');
 
 </script>
-    {% endif %}
+</body>
+    <!-- {% endif %}
     {% if page.comments != false %}
         {% include disqus_comments.html %}
-    {% endif %}
+    {% endif %} -->
+</html>
