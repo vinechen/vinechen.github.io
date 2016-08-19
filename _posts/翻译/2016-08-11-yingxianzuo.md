@@ -6,9 +6,11 @@ excerpt: "较实用的流星雨观赏指南"
 tags: [翻译作品]
 comments: true
 published: true
+feature: http://img.vinechen.com/16-8-19/59890152.jpg
+
 ---
 
-![img](http://mmbiz.qpic.cn/mmbiz/bc5EVtFHXlGPdeOgicBJeQgshAWOmnNbJk3G1fxSscu4dwYeC0C0ibhsfibib15tFTPUNnLdZ3ib8aU8lS3Dic4TuCgg/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1)
+![](http://img.vinechen.com/16-8-19/61759489.jpg)
 
 每年，地球都会穿越一个叫斯威夫特-塔特尔彗星的碎片带，这些碎片穿越地球的大气层随后燃烧起来，形成了我们看到的陨星或流星。英仙座流星雨在每年的八月中旬到达其高峰期，在高峰期每小时**至少**可以观测50至60颗流星。这场被许多人认为是一年中最亮且最具观赏价值的流星秀，无疑是一个到户外观赏大自然精彩表演的好机会。
 
