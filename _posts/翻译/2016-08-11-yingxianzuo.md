@@ -1,4 +1,4 @@
-```
+---
 layout: post
 title: 如何优雅地观赏8.12英仙座流星雨
 date: 2016-08-11
@@ -6,9 +6,7 @@ excerpt: "较实用的流星雨观赏指南"
 tags: [翻译作品]
 comments: true
 published: true
-```
-
-
+---
 
 ![img](http://mmbiz.qpic.cn/mmbiz/bc5EVtFHXlGPdeOgicBJeQgshAWOmnNbJk3G1fxSscu4dwYeC0C0ibhsfibib15tFTPUNnLdZ3ib8aU8lS3Dic4TuCgg/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1)
 
