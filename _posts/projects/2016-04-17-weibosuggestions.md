@@ -7,6 +7,7 @@ date: 2016-04-17
 project: true
 comments: true
 published: true
+feature: http://img.vinechen.com/16-8-19/51166253.jpg
 ---
 ```html
 在微博实习期间提出了一些改善产品交互的建议，在以下展开讨论。
