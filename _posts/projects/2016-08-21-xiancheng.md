@@ -7,7 +7,7 @@ date: 2016-08-21
 project: true
 comments: true
 published: true
-feature: http://img.vinechen.com/16-8-21/75930039.jpg
+feature: http://img.vinechen.com/16-8-21/50262552.jpg
 ---
 ```html
 下面是关于鲜城收藏页面的建议
