@@ -1,2 +1,2 @@
 
-give taylantatlia :star: 
+give tailantatli a :star: 
