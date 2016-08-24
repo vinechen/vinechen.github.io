@@ -21,5 +21,20 @@ ReactDOM.render(
 document.getElementById('example')
 );
 </script>
+<script type="text/babel">
+  var names = ['1', '2', '3'];
+
+  ReactDOM.render(
+    <div>
+    {
+      names.map(function (name) {
+        return <div> it is {name} </div>
+      })
+    }
+    </div>,
+    document.getElementById('example')
+  );
+  </script>
+  
 </body>
 </html>
