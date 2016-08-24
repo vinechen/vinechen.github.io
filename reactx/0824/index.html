@@ -6,10 +6,9 @@
 <script src="../build/browser.min.js"></script>
 </head>
 <body>
-<div id="example"></div>
-<script type="text/babel">
-var names = ['first', 'second', 'third']；
-
+  <div id="example"></div>
+  <script type="text/babel">
+    var names = ['first', 'second', 'third'];
 ReactDOM.render(
 <div>
   {
@@ -21,20 +20,6 @@ ReactDOM.render(
 document.getElementById('example')
 );
 </script>
-<script type="text/babel">
-  var names = ['1', '2', '3'];
 
-  ReactDOM.render(
-    <div>
-    {
-      names.map(function (name) {
-        return <div> it is {name} </div>
-      })
-    }
-    </div>,
-    document.getElementById('example')
-  );
-  </script>
-  
 </body>
 </html>
