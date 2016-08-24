@@ -3,7 +3,7 @@ title:              Vine Chen
 bio:                'Know Yourself'
 description:        "一个手指特长的人."
 reading_time:       true
-words_per_minute:   20
+words_per_minute:   10
 logo:               'assets/img/logo.png'
 background:         false
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
@@ -62,7 +62,7 @@ short_name : vinechen
 #codepen:           username
 #keybase:           username
 #xmpp:              username@server.com
-twitter:            IdeaMeet
+twitter:            vine1024
 weibo:             234960910
 github:             vinechen
 email:            newnehc@live.com
