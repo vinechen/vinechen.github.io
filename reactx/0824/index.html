@@ -6,20 +6,20 @@
 <script src="../build/browser.min.js"></script>
 </head>
 <body>
-var names = ['测试','测试二','测试三']；
 <div id="example"></div>
 <script type="text/babel">
+var names = ['first', 'second', 'third']；
+
 ReactDOM.render(
 <div>
   {
-names.map(function (name){
-return <div> 这是 {name}</div>
-})
+    names.map(function (name) {
+      return <div> This is {name} </div>
+    })
 }
-</div>
+</div>,
 document.getElementById('example')
 );
-
 </script>
 </body>
 </html>
