@@ -15,25 +15,29 @@ feature: http://img.vinechen.com/16-8-19/69050931.jpg
 
 
 
-## **Excellent Window Tools List**
+## **Window应用**
 
 | Name       | Use         | Size   | Link                                     |
 | :--------- | :---------- | :----- | :--------------------------------------- |
-| Typora     | MarkDown编辑器 | 33.3Mb | [Download](http://img.vinechen.com/typora-setup.exe)> |
-| Gifcam     | 动态图捕捉       | 1.52Mb | [Download](http://img.vinechen.com/GifCam.exe)> |
-| Potplayer  | 视频播放器       | 19.5Mb | [Download](http://potplayer.daum.net/?lang=zh_CN)> |
+| Typora     | MarkDown编辑器 | 33.3M  | [Download>](http://img.vinechen.com/typora-setup.exe) |
+| Gifcam     | 动态图捕捉       | 1.52M  | [Download>](http://img.vinechen.com/GifCam.exe) |
+| Potplayer  | 视频播放器       | 19.5M  | [Download>](http://potplayer.daum.net/?lang=zh_CN) |
 | Instapaper | 优秀的稍后阅读应用   | ……     | ……                                       |
-| 1clipboard | 剪贴板管理应用     | 49.5Mb | [Download](http://1clipboard.io)>        |
-| 未完待续       | 欢迎评论补充      | ……     | ……                                       |
+| 1clipboard | 剪贴板管理应用     | 49.5M  | [Download>](http://1clipboard.io)        |
+| PicPick    | 截图工具        | 12.56M | [Download>](http://ngwin.com/picpick/download_start) |
+| Ccleaner   | 优化软件        | 7.15M  | [Download>](http://www.piriform.com/ccleaner) |
 
-## **Excellent Mac Tools List**
+## **Mac应用**
 
-| Name    | Use  | Size | Link   |
-| :------ | :--- | :--- | :----- |
-| waiting | for  | the  | update |
+| Name | Use  | Size | Link                             |
+| :--- | :--- | :--- | :------------------------------- |
+| Snip | 截图工具 | 2.5M | [Download>](http://snip.qq.com/) |
 
-## **Excellent Website Tools List**
+## **Web应用**
 
 | Name   | Use        | Link                         |
 | :----- | :--------- | :--------------------------- |
 | 硕鼠Nano | 在线视频下载链接提取 | [Go>](http://www.flvcd.com/) |
+| 画图     | 在线画图       | [Go>](https://www.draw.io/)  |
+|        |            | [ ](http://www.waitsun.com)  |
+
