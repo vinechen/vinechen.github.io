@@ -8,15 +8,12 @@
 <body>
   <div id="example"></div>
   <script type="text/babel">
-    var names = ['first', 'second', 'third'];
+    var names = [
+<h1>code1</h1>,
+<h2>code2</h2>,
+<h3>code3</h3>,];
 ReactDOM.render(
-<div>
-  {
-    names.map(function (name) {
-      return <div> This is {name} </div>
-    })
-}
-</div>,
+<div> {names}</div>,
 document.getElementById('example')
 );
 </script>
