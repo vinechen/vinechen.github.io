@@ -5,22 +5,9 @@
 <!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
 <html>
 <head>
-<script src=http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=appkey type="text/javascript" charset="utf-8"></script>
-</head>
+  <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+<html xmlns:wb="http://open.weibo.com/wb"></html></head>
 <body>
-  WB2.anyWhere(function(W){
-      W.widget.publish({
-          action:"pubilish",
-          type:"mobile",
-          language:"zh_cn",
-          button_type:"red",
-          button_size:"middle",
-          button_text:"发布",
-          default_text:"在此处发布微博会自动带上工程机iPhone7小尾巴",
-          refer:"y",
-          appkey:"1F7g3W",
-          id: "wb_publisher"
-      });
-  });
+<wb:publish action="pubilish" type="mobile" language="zh_cn" button_type="red" button_size="middle" button_text="发布" default_text="在此处发布微博会自动带上工程机iPhone7小尾巴" refer="y" appkey="1F7g3W" ></wb:publish>
 </body>
 </html>
