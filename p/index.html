@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>陈文的练习本</title>
 <style type="text/css">
 	table tr td,th{
 		border:1px solid #000;
@@ -15,21 +16,34 @@
 		font-size: 20px;
 		font-weight: normal;
 	}
-	p{
+	h3{
 		font-size: 15;
 	}
+	h4{
 
+		font-size: 13px;
+	}
+	.colorgreen{
+		color: green;
+	}
+	.fontsmall{
+		font-size: 10px;
+	}
+	.colorblue>span{
+
+		color: blue;
+	}
+	.colorred qw{
+		color:red;
+	}
 </style>
 </head>
 <body>
 
 <h1>今天写的一个网页</h1>
-<h2>就是这个了</h2>
-<p>
-	感觉不止这些，还要补充一下表格、复选框还有提交按钮
-
-</p>
-<br>
+<h2>
+一、表格
+</h2>
 <table summary="这是一个表格">
 <caption>这是一个表格</caption>
 	<tr>
@@ -52,9 +66,10 @@
 	<td>(4,2)</td>
 	<td>(4,3)</td>
 	</tr>
+</table>
 <br>
-	<p>接下来是选项了
-	</p>
+	<h2>二、选项
+	</h2>
 	<label for="boy">火星人</label>
 	<input type="checkbox" name="who" id="boy">
 	<br>
@@ -63,16 +78,29 @@
 	<br>
 	<label for="other">其他：</label>
 	<input type="text" name="who" placeholder="输入星球">
-	<br>
+	<br><br>
 	<input type="reset" value="重新选" >
 	<input type="submit" value="确定了"><br>
-	
-	<img src="https://mats.gtimg.com/om/om_2.0/images/login_screen4_bg.png" alt="图片太酷无法显示" title="是图片">
+	<h2>
+		三、插入图片
+	</h2>
+	<img width="300px" height="100%" src="http://img5.imgtn.bdimg.com/it/u=2155038303,1475698622&fm=206&gp=0.jpg" alt="图片太酷无法显示" title="是图片">
+	<br>
+	<h2>
+		四、变色
+		<br>
+		<p class="fontsmall colorgreen">
+			这是一行15px大小的字，而且是绿色的。
+		</p>
+	</h2>
+
 	<p>
 		我爱学习，学习使我快乐
 	</p>
-</table>
-
+	<br>
+	<h2>五、后代选择器</h2><br>
+	<p class="colorblue">正常的字长这样<span>这是加了特效的字<h4><span>夹着正常字</span></h4>这个可能还是正常的</span></p>
+	<p class="colorred"> 正常的字长这样<qw>这是加了特效的字</qw>夹着正常字<qw>这个应该还是特效字</qw></p>
 </body>
 
 </html>
