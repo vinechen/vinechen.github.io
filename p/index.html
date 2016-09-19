@@ -14,7 +14,8 @@
 	h2{
 
 		font-size: 20px;
-		font-weight: normal;
+		font-weight: bold;
+		
 	}
 	span,h3{
 		font-size: 15;
@@ -35,6 +36,33 @@
 	}
 	.colorred li{
 		border: 1px solid red ; width:100px;
+	}
+
+	#div1{float: right;width: 30%;
+		height: 30px;border: 1px solid red}
+	#div2{float: right;width: 30%;
+		height: 30px;
+		}
+	#div3{width: 300px;
+		height: 300px;
+		border: 1px solid red;
+		position: absolute;
+		left: 250px;
+		top: 80px;
+	}
+		#div4{width: 300px;
+		height: 300px;
+		border: 1px solid red;
+		position: relative;
+		left: 250px;
+		top: 80px;
+	}
+			#div5{width: 300px;
+		height: 300px;
+		border: 1px solid red;
+		position: fixed;
+		left: 600px;
+		top: 80px;
 	}
 </style>
 </head>
@@ -141,7 +169,32 @@
 	<h3 style="border:2px dashed red">1.边框-虚线-两像素-红色</h3>
 	<h3 style="border-bottom:2px solid red">2.底框，样式同上</h3>
 	<h3>3.实际宽度=margin-left  +  border-left  +  padding-left  +  width  +  padding-right  +  border-right  +  margin-right</h3>
+	<h2>九、元素有三种布局模型</h2>
+	<h3>1、流动模型（Flow）
+		2、浮动模型 (Float)
+		3、层模型（Layer）</h3>
+	<h2>十、浮动模型</h2>
+	<h3 id="div1">这是右浮动</h3>
+	<h2>十一、层模型</h2>
+	<h3>1、绝对定位(position: absolute)
 
+2、相对定位(position: relative)
+
+3、固定定位(position: fixed)</h3>
+	<h2>十二、绝对定位</h2>
+	<h3 id="div3">如果想为元素设置层模型中的绝对定位，需要设置position:absolute(表示绝对定位)，这条语句的作用将元素从文档流中拖出来，然后使用left、right、top、bottom属性相对于其最接近的一个具有定位属性的父包含块进行绝对定位。如果不存在这样的包含块，则相对于body元素，即相对于浏览器窗口。<br>——对这是十二的内容：《绝对位置》</h3><h3>绝对位置后面的内容</h3>
+
+	<h2>十三、相对定位</h2>
+	<h3 id="div4">如果想为元素设置层模型中的相对定位，需要设置position:relative（表示相对定位），它通过left、right、top、bottom属性确定元素在正常文档流中的偏移位置。相对定位完成的过程是首先按static(float)方式生成一个元素(并且元素像层一样浮动了起来)，然后相对于以前的位置移动，移动的方向和幅度由left、right、top、bottom属性确定，偏移前的位置保留不动。——对这是十三的内容：《相对位置》</h3><h3>相对位置后面的内容</h3>
+	
+	<h2>十四、固定定位</h2>
+
+	<h3 id="div5">fixed：表示固定定位，与absolute定位类型类似，但它的相对移动的坐标是视图（屏幕内的网页窗口）本身。由于视图本身是固定的，它不会随浏览器窗口的滚动条滚动而变化，除非你在屏幕中移动浏览器窗口的屏幕位置，或改变浏览器窗口的显示大小，因此固定定位的元素会始终位于浏览器窗口内视图的某个位置，不会受文档流动影响，这与background-attachment:fixed;属性功能相同。以下代码可以实现相对于浏览器视图向右移动100px，向下移动50px。并且拖动滚动条时位置固定不变。——对这是十四的内容：《固定位置》</h3><h3>固定位置后面的内容</h3>
+	
+
+	<br>
+	<br>
+	<br>
 	<br>
 	<p>
 		我爱学习，学习使我快乐
