@@ -4,6 +4,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>陈文的练习本</title>
 <style type="text/css">
+	body{margin: 0;padding: 0;background: #6de784;
+	}
+	div{
+		line-height: 1em;
+	}
+	.top{height: 60px;width: 100%;top:0;background: #5997ca}
+	.left{top:65px;padding:0 0 50px 50px;width: 100%}
+	.right{margin-left: 200px;height: 900px;margin-top:5px;position: absolute;background: #eab558}
 	table tr td,th{
 		border:1px solid #000;
 	}
@@ -44,25 +52,32 @@
 		height: 30px;
 		}
 	#div3{width: 300px;
-		height: 300px;
+		height: 20px;
 		border: 1px solid red;
 		position: absolute;
-		left: 250px;
-		top: 80px;
+		left: -1px;
+		bottom: -1px;
+		line-height: 1.2em;
 	}
 		#div4{width: 300px;
-		height: 300px;
+		height: 330px;
 		border: 1px solid red;
 		position: relative;
-		left: 250px;
-		top: 80px;
+		font-size: 18px;
+		line-height: 25px;
+		left: 0px;
+		top: 0px;
 	}
 			#div5{width: 300px;
-		height: 300px;
-		border: 1px solid red;
+		height: 400px;
+		background: #67dcdb;
 		position: fixed;
-		left: 600px;
-		top: 80px;
+		top: 60px;
+		right:10px; 
+		color: white;
+		font-size: 18px;
+		line-height: 25px;
+		text-align: left;
 	}
 				#div6{width: 300px;
 		height: 100%;
@@ -72,19 +87,27 @@
 		top: 20px;
 	}
 				#div7{
+		width: 300px;
+		height: 300px;
 		position: absolute;
-		left: -1px;
-		bottom: -1px;
-		text-align: center;
-		border: 1px solid red;
-		width: 100%;
+		top: 60px;
+		
+		left:40%;
+		font-size: 18px;
+		color: white;
+		line-height: 25px;
+		text-align: left;
+		background: #67dcdb;
+		
 	
 	}
 </style>
 </head>
 <body>
-
-<h1>今天写的一个网页</h1>
+<div class="top">
+<a style="color:white;font-size:30px;text-align:center;line-height:1.8em" > <strong> <center>Practice</center></strong></a>
+</div>
+<div class="left">
 <h2>
 一、表格
 </h2>
@@ -198,16 +221,16 @@
 
 3、固定定位(position: fixed)</h3>
 	<h2>十二、绝对定位</h2>
-	<h3 id="div3">如果想为元素设置层模型中的绝对定位，需要设置position:absolute(表示绝对定位)，这条语句的作用将元素从文档流中拖出来，然后使用left、right、top、bottom属性相对于其最接近的一个具有定位属性的父包含块进行绝对定位。如果不存在这样的包含块，则相对于body元素，即相对于浏览器窗口。<br>——对这是十二的内容：《绝对位置》</h3><h3>绝对位置后面的内容</h3>
+	<div id="div7">如果想为元素设置层模型中的绝对定位，需要设置position:absolute(表示绝对定位)，这条语句的作用将元素从文档流中拖出来，然后使用left、right、top、bottom属性相对于其最接近的一个具有定位属性的父包含块进行绝对定位。如果不存在这样的包含块，则相对于body元素，即相对于浏览器窗口。<br>——对这是十二的内容：《绝对位置》</div> <h3>绝对位置后面的内容</h3>
 
 	<h2>十三、相对定位</h2>
 	<h3 id="div4">如果想为元素设置层模型中的相对定位，需要设置position:relative（表示相对定位），它通过left、right、top、bottom属性确定元素在正常文档流中的偏移位置。相对定位完成的过程是首先按static(float)方式生成一个元素(并且元素像层一样浮动了起来)，然后相对于以前的位置移动，移动的方向和幅度由left、right、top、bottom属性确定，偏移前的位置保留不动。——对这是十三的内容：《相对位置》</h3><h3>相对位置后面的内容</h3>
 	
 	<h2>十四、固定定位</h2>
 
-	<h3 id="div5">fixed：表示固定定位，与absolute定位类型类似，但它的相对移动的坐标是视图（屏幕内的网页窗口）本身。由于视图本身是固定的，它不会随浏览器窗口的滚动条滚动而变化，除非你在屏幕中移动浏览器窗口的屏幕位置，或改变浏览器窗口的显示大小，因此固定定位的元素会始终位于浏览器窗口内视图的某个位置，不会受文档流动影响，这与background-attachment:fixed;属性功能相同。以下代码可以实现相对于浏览器视图向右移动100px，向下移动50px。并且拖动滚动条时位置固定不变。——对这是十四的内容：《固定位置》</h3><h3>固定位置后面的内容</h3>
+	<div id="div5">fixed：表示固定定位，与absolute定位类型类似，但它的相对移动的坐标是视图（屏幕内的网页窗口）本身。由于视图本身是固定的，它不会随浏览器窗口的滚动条滚动而变化，除非你在屏幕中移动浏览器窗口的屏幕位置，或改变浏览器窗口的显示大小，因此固定定位的元素会始终位于浏览器窗口内视图的某个位置，不会受文档流动影响，这与background-attachment:fixed;属性功能相同。以下代码可以实现相对于浏览器视图向右移动100px，向下移动50px。并且拖动滚动条时位置固定不变。——对这是十四的内容：《固定位置》</div><h3>固定位置后面的内容</h3>
 	<h2>十五、固定定位与相对位置的结合</h2>
-	<div id="div6"> <img src="http://uus-img3.android.d.cn/content_pic/201509/behpic/icon/894/1-62894/icon-1441955247166.png"><div id="div7">这是一张图片</div></div>
+	<div id="div6"> <img src="http://uus-img3.android.d.cn/content_pic/201509/behpic/icon/894/1-62894/icon-1441955247166.png"><div id="div3">这是一张图片</div></div><br>
 	<h2>十六、固定定位与相对位置的结合</h2>
 
 	<br>
@@ -218,6 +241,8 @@
 	<p>
 		我爱学习，学习使我快乐
 	</p>
+
+</div>
 </body>
 
 </html>
