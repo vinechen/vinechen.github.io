@@ -102,6 +102,7 @@
 	
 	}
 </style>
+
 </head>
 <body>
 <div class="top">
@@ -137,6 +138,7 @@
 <br>
 	<h2>二、选项
 	</h2>
+	<div class="where1">
 	<label for="boy">火星人</label>
 	<input type="checkbox" name="who" id="boy">
 	<br>
@@ -146,9 +148,25 @@
 	<label for="other">其他：</label>
 	<input type="text" name="who" placeholder="输入星球">
 	<br><br>
-	<input type="reset" value="重新选" >
-	<input type="submit" value="确定了"><br>
+	<input type="reset" onclick="rechoose()" value="重新选" >
+	<input type="submit" onclick="confirmm()" value="确定了"><br>
 	<h2>
+	<script type="text/javascript">
+		function rechoose(){
+			var mmessage=confirm("确定重新选吗？");
+			if (mmessage==true) {
+					where1.removeAttribute("where1");
+			}
+			else{
+				alert("exo me?");
+			}
+		}
+		function confirmm(){
+			alert("ok");
+			window.open.style.width="20px";
+		}
+	</script>
+	</div>
 		三、插入图片
 	</h2>
 	<img width="200px" height="100%" src="http://uus-img3.android.d.cn/content_pic/201509/behpic/icon/894/1-62894/icon-1441955247166.png" alt="图片太酷无法显示" title="是图片">
