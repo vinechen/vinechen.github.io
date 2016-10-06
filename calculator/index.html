@@ -69,6 +69,12 @@
         .newClass{
             color: green;
         }
+        .smallFont2{
+            font-size:30px;
+            position:absolute;
+            right:15px;
+            bottom:5px;
+        }
     </style>
 </head>
 <body>
@@ -95,11 +101,40 @@
 </div>
 
 <script type="text/javascript">
-    // window.onload=function(){
+     window.onload=function(){
+         fontsizeSmall();
     // 	highLight();
-    // }
-
+     }
     alert("Start operation?");
+
+
+
+
+     //重置JS
+     function reloadAbleJSFn(id,newJS)
+     {
+         var oldjs = null;
+         var t = null;
+         var oldjs = document.getElementById(id);
+         if(oldjs) oldjs.parentNode.removeChild(oldjs);
+         var scriptObj = document.createElement("script");
+         scriptObj.src = newJS;
+         scriptObj.type = "text/javascript";
+         scriptObj.id   = id;
+         document.getElementsByTagName("head")[0].appendChild(scriptObj);
+     }
+
+
+     var defaultValue = document.getElementById("resulttext").lastChild;
+     var defaultProcess = document.getElementById("process").lastChild;
+     function fontsizeSmall() {
+         if (defaultValue.length > 9) {
+             defaultValue.parentNode.setAttribute("class", "smallFont2");
+         }                                                                 //数据溢出问题没想到好的解决办法，减小字体大小？
+         if (defaultProcess.length > 9) {
+             defaultProcess.parentNode.setAttribute("class", "smallFont1");
+         }
+     }
 
 
     function highLight(){
@@ -115,7 +150,6 @@
         }
     }
 
-
     var numberButton=document.getElementsByTagName("th");
     var numbers=document.getElementsByName("numbers");
     for(var i=0;i<numbers.length;i++){
@@ -125,95 +159,130 @@
         }
     }
 
-    function clickNumber(bV){
-        var defaultValue=document.getElementById("resulttext").lastChild;
+
+
+
+
+     var clearEntry = document.getElementById("clearEntry");
+     function clearScreen() {
+//                    defaultProcess.nodeValue=defaultValue.nodeValue;         //清零前是否有必要把第二行的数值丢到第一行
+         defaultValue.nodeValue = " ";
+         defaultValue.setAttribute("class", "computingtextresult");
+         clearEntry.lastChild.nodeValue = "AC";
+         clearEntry.onclick = function () {
+//             defaultProcess.nodeValue = " ";
+//             reloadAbleJSFn();
+             clearEntry.lastChild.nodeValue = "C";
+             defaultProcess.setAttribute("class", "computingtextprocess");
+         }
+     }
+
+     clearEntry.onclick = function () {
+         clearScreen();
+     }
+
+
+
+
+    function clickNumber(bV) {
+//        var defaultValue = document.getElementById("resulttext").lastChild;
+//        var defaultProcess = document.getElementById("process").lastChild;
         defaultValue.nodeValue += bV;
         // var firstNum=defaultValue.nodeValue;								//第一个数声明原本在这儿
-        var operators=document.getElementsByName("operators")
-        for(var i=0;i<operators.length;i++){
-            operators[i].onclick=function(){
+        var operators = document.getElementsByName("operators")
+        for (var i = 0; i < operators.length; i++) {
+            operators[i].onclick = function () {
 
-                var a=this.lastChild.nodeValue;
-                defaultValue.nodeValue +=a;
-
-                if (a==="+") {
-                    document.getElementById("equal").onclick=function(){
-                        var firstNum=defaultValue.nodeValue.split("+")[0];
-                        var secondNum=defaultValue.nodeValue.split("+")[1];
-                        var addResult= parseInt(firstNum)+parseInt(secondNum);
-                        var defaultProcess=document.getElementById("process").lastChild;
-                        defaultProcess.nodeValue=defaultValue.nodeValue;
-                        defaultValue.nodeValue=addResult;            //没想到更好的方法，只好先将数字赋值给字符串
-                        defaultValue.nodeValue=defaultValue.nodeValue.substr(0,10);
+                var a = this.lastChild.nodeValue;
+                defaultValue.nodeValue += a;
+                fontsizeSmall();
+                if (a === "+") {
+                    document.getElementById("equal").onclick = function () {
+                        var firstNum = defaultValue.nodeValue.split("+")[0];
+                        var secondNum = defaultValue.nodeValue.split("+")[1];
+                        var addResult = parseInt(firstNum) + parseInt(secondNum);
+//                        var defaultProcess = document.getElementById("process").lastChild;
+                        defaultProcess.nodeValue = defaultValue.nodeValue;
+                        defaultValue.nodeValue = addResult;            //没想到更好的方法，只好先将数字赋值给字符串
+//                        defaultValue.nodeValue=defaultValue.nodeValue.substr(0,10);
+                        fontsizeSmall();
+                    }
+                }
+                if (a === "-") {
+                    document.getElementById("equal").onclick = function () {
+                        var firstNum = defaultValue.nodeValue.split("+")[0];
+                        var secondNum = defaultValue.nodeValue.split("-")[1];
+                        var addResult = parseInt(firstNum) - parseInt(secondNum);
+//                        var defaultProcess = document.getElementById("process").lastChild;
+                        defaultProcess.nodeValue = defaultValue.nodeValue;
+                        defaultValue.nodeValue = addResult;
+//                        defaultValue.nodeValue=defaultValue.nodeValue.substr(0,10);
+                        fontsizeSmall()
                     }
                 }
 
-                if (a==="-") {
-                    document.getElementById("equal").onclick=function(){
-                        var firstNum=defaultValue.nodeValue.split("+")[0];
-                        var secondNum=defaultValue.nodeValue.split("-")[1];
-                        var addResult= parseInt(firstNum) - parseInt(secondNum);
-                        var defaultProcess=document.getElementById("process").lastChild;
-                        defaultProcess.nodeValue=defaultValue.nodeValue;
-                        defaultValue.nodeValue=addResult;
-                        defaultValue.nodeValue=defaultValue.nodeValue.substr(0,10);
+                if (a === "×") {
+                    document.getElementById("equal").onclick = function () {
+                        var firstNum = defaultValue.nodeValue.split("+")[0];
+                        var secondNum = defaultValue.nodeValue.split("×")[1];
+                        var addResult = parseInt(firstNum) * parseInt(secondNum);
+//                        var defaultProcess = document.getElementById("process").lastChild;
+                        defaultProcess.nodeValue = defaultValue.nodeValue;
+                        defaultValue.nodeValue = addResult;
+//                        defaultValue.nodeValue=defaultValue.nodeValue.substr(0,10);
+                        fontsizeSmall();
                     }
                 }
 
-                if (a==="×") {
-                    document.getElementById("equal").onclick=function(){
-                        var firstNum=defaultValue.nodeValue.split("+")[0];
-                        var secondNum=defaultValue.nodeValue.split("×")[1];
-                        var addResult= parseInt(firstNum) * parseInt(secondNum);
-                        var defaultProcess=document.getElementById("process").lastChild;
-                        defaultProcess.nodeValue=defaultValue.nodeValue;
-                        defaultValue.nodeValue=addResult;
-                        defaultValue.nodeValue=defaultValue.nodeValue.substr(0,10);
+                if (a === "÷") {
+                    document.getElementById("equal").onclick = function () {
+                        var firstNum = defaultValue.nodeValue.split("+")[0];
+                        var secondNum = defaultValue.nodeValue.split("÷")[1];
+                        var addResult = parseInt(firstNum) / parseInt(secondNum);
+//                        var defaultProcess = document.getElementById("process").lastChild;
+                        defaultProcess.nodeValue = defaultValue.nodeValue;
+                        defaultValue.nodeValue = addResult;
+//                        defaultValue.nodeValue=defaultValue.nodeValue.substr(0,10);
+//                        fontsizeSmall();
                     }
                 }
+//                function fontsizeSmall() {
+//                    if (defaultValue.length > 9) {
+//                        defaultValue.parentNode.setAttribute("class", "smallFont2");
+//                    }                                                                 //数据溢出问题没想到好的解决办法，减小字体大小？
+//                    if (defaultProcess.length > 9) {
+//                        defaultProcess.parentNode.setAttribute("class", "smallFont1");
+//                    }
 
-                if (a==="÷") {
-                    document.getElementById("equal").onclick=function(){
-                        var firstNum=defaultValue.nodeValue.split("+")[0];
-                        var secondNum=defaultValue.nodeValue.split("÷")[1];
-                        var addResult= parseInt(firstNum) / parseInt(secondNum);
-                        var defaultProcess=document.getElementById("process").lastChild;
-                        defaultProcess.nodeValue=defaultValue.nodeValue;
-                        defaultValue.nodeValue=addResult;
-                        defaultValue.nodeValue=defaultValue.nodeValue.substr(0,10);
-                    }
-                }
 
-                if(defaultValue.length>10){
-                    defaultValue.nodeValue=defaultValue.nodeValue.substr(0,10);
-                }
-
-                var clearEntry=document.getElementById("clearEntry");
-                clearEntry.onclick=function(){
+                    var clearEntry = document.getElementById("clearEntry");
+                    clearEntry.onclick = function () {
 //                    var defaultProcess=document.getElementById("process").lastChild;
 //                    defaultProcess.nodeValue=defaultValue.nodeValue;         //清零前是否有必要把第二行的数值丢到第一行
-                    defaultValue.nodeValue=" ";
-                    clearEntry.lastChild.nodeValue="AC";
-                    clearEntry.onclick=function () {
-                        var defaultProcess=document.getElementById("process").lastChild;
-                        defaultProcess.nodeValue=" ";
-                        clearEntry.lastChild.nodeValue="C";
+                        defaultValue.nodeValue = " ";
+                        defaultValue.parentNode.setAttribute("class", "computingtextresult")
+                        clearEntry.lastChild.nodeValue = "AC";
+                        clearEntry.onclick = function () {
+                            var defaultProcess = document.getElementById("process").lastChild;
+                            defaultProcess.nodeValue = " ";
+                            clearEntry.lastChild.nodeValue = "C";
+                        }
                     }
                 }
             }
-        }
+
     }
 
-
-    function transmitNumber(whichNum){
-        // alert(whichNum.nodeValue);
-        // var numberButton=document.getElementsByTagName("th");
-        // for(var i=0;i<numberButton.length;i++){
-        // var buttonV=whichNum.lastChild;
-        // var defaultValue=document.getElementById("resulttext").lastChild;
-        // defaultValue.nodeValue=buttonV.nodeValue;
-        //}
-    }
+//
+//    function transmitNumber(whichNum){
+//        // alert(whichNum.nodeValue);
+//        // var numberButton=document.getElementsByTagName("th");
+//        // for(var i=0;i<numberButton.length;i++){
+//        // var buttonV=whichNum.lastChild;
+//        // var defaultValue=document.getElementById("resulttext").lastChild;
+//        // defaultValue.nodeValue=buttonV.nodeValue;
+//        //}
+//    //}
 </script>
 
 
