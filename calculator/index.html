@@ -85,7 +85,7 @@
     <!--keyboard begins here-->
 
     <table>
-        <tr><th  class="symbol" id="clearEntry">AC</th><th  class="symbol" id="addSubtract">+/-</th><th class="symbol" id="percentage">%</th><th  class="operators" name="operators" id="multiply">×</th></tr>
+        <tr><th  class="symbol" id="clearEntry">C</th><th  class="symbol" id="addSubtract">+/-</th><th class="symbol" id="percentage">%</th><th  class="operators" name="operators" id="multiply">×</th></tr>
         <tr><th  class="numbers" name="numbers" id="7">7</th><th  class="numbers" name="numbers" id="8">8</th><th  class="numbers" name="numbers" id="9">9</th><th  class="operators" name="operators" id="divide">÷</th></tr>
         <tr><th  class="numbers" name="numbers" id="4">4</th><th  class="numbers" name="numbers" id="5">5</th><th  class="numbers" name="numbers" id="6">6</th><th  class="operators" name="operators" id="subtract">-</th></tr>
         <tr><th  class="numbers" name="numbers" id="1">1</th><th  class="numbers" name="numbers" id="2">2</th><th  class="numbers" name="numbers" id="3">3</th><th  class="operators" name="operators" id="add">+</th></tr>
@@ -128,7 +128,7 @@
     function clickNumber(bV){
         var defaultValue=document.getElementById("resulttext").lastChild;
         defaultValue.nodeValue += bV;
-        // var firstNum=defaultValue.nodeValue;								//第一个数声明在这儿
+        // var firstNum=defaultValue.nodeValue;								//第一个数声明原本在这儿
         var operators=document.getElementsByName("operators")
         for(var i=0;i<operators.length;i++){
             operators[i].onclick=function(){
@@ -143,7 +143,8 @@
                         var addResult= parseInt(firstNum)+parseInt(secondNum);
                         var defaultProcess=document.getElementById("process").lastChild;
                         defaultProcess.nodeValue=defaultValue.nodeValue;
-                        defaultValue.nodeValue=addResult;
+                        defaultValue.nodeValue=addResult;            //没想到更好的方法，只好先将数字赋值给字符串
+                        defaultValue.nodeValue=defaultValue.nodeValue.substr(0,10);
                     }
                 }
 
@@ -155,6 +156,7 @@
                         var defaultProcess=document.getElementById("process").lastChild;
                         defaultProcess.nodeValue=defaultValue.nodeValue;
                         defaultValue.nodeValue=addResult;
+                        defaultValue.nodeValue=defaultValue.nodeValue.substr(0,10);
                     }
                 }
 
@@ -166,6 +168,7 @@
                         var defaultProcess=document.getElementById("process").lastChild;
                         defaultProcess.nodeValue=defaultValue.nodeValue;
                         defaultValue.nodeValue=addResult;
+                        defaultValue.nodeValue=defaultValue.nodeValue.substr(0,10);
                     }
                 }
 
@@ -177,6 +180,24 @@
                         var defaultProcess=document.getElementById("process").lastChild;
                         defaultProcess.nodeValue=defaultValue.nodeValue;
                         defaultValue.nodeValue=addResult;
+                        defaultValue.nodeValue=defaultValue.nodeValue.substr(0,10);
+                    }
+                }
+
+                if(defaultValue.length>10){
+                    defaultValue.nodeValue=defaultValue.nodeValue.substr(0,10);
+                }
+
+                var clearEntry=document.getElementById("clearEntry");
+                clearEntry.onclick=function(){
+//                    var defaultProcess=document.getElementById("process").lastChild;
+//                    defaultProcess.nodeValue=defaultValue.nodeValue;         //清零前是否有必要把第二行的数值丢到第一行
+                    defaultValue.nodeValue=" ";
+                    clearEntry.lastChild.nodeValue="AC";
+                    clearEntry.onclick=function () {
+                        var defaultProcess=document.getElementById("process").lastChild;
+                        defaultProcess.nodeValue=" ";
+                        clearEntry.lastChild.nodeValue="C";
                     }
                 }
             }
