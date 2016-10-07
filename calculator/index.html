@@ -99,9 +99,9 @@
 <body>
 
 <div class="completeframe">
-
-    <div class="statusbar"><a>statusbar</a></div>
-
+    <div class="statusbar">
+        <a>statusbar</a>
+    </div>
     <div class="resultframe">
         <a id="resulttext" class="computingtextresult"> </a>
         <a id="process" class="computingtextprocess"> </a>
@@ -120,12 +120,11 @@
 </div>
 
 <script type="text/javascript">
-//     window.onload=function(){
-//         fontsizeSmall();
-//    // 	highLight();
-//     }
+     window.onload=function(){
+         ad;
+    // 	highLight();
+     }
     alert("Start operation?");
-
 
      /*  日志
 10.5 寫完了html框架
@@ -198,33 +197,30 @@
 
     //清除按鈕
      var clearEntry = document.getElementById("clearEntry");
-     function clearScreen() {
+     var fu=function clearScreen() {
+         if (clearEntry.lastChild.nodeValue === "C") {
 //                    defaultProcess.nodeValue=defaultValue.nodeValue;         //清零前是否有必要把第二行的数值丢到第一行
-         defaultValue.nodeValue = " ";
-         defaultValue.parentNode.setAttribute("class","computingtextresult"); //樣式初始化，避免有時候多位數（字體小）清空后新輸入的數字也是小字體
-         clearEntry.lastChild.nodeValue="AC";
-
-         if (clearEntry.lastChild.nodeValue === "AC") {
-             clearEntry.onclick = function () {
+             defaultValue.nodeValue = " ";
+             defaultValue.parentNode.setAttribute("class", "computingtextresult"); //樣式初始化，避免有時候多位數（字體小）清空后新輸入的數字也是小字體
+             clearEntry.lastChild.nodeValue = "AC";
+         }
+         else {
+//             clearEntry.onclick = function () {
                  defaultProcess.nodeValue = " ";
                  defaultValue.nodeValue = " ";
+                 clearEntry.lastChild.nodeValue="C";
 //             reloadAbleJSFn(); //想引入初始化函數來著，然而不會寫（因為測試過程中發現AC過後運算有時候會出錯，然而還沒有找到出錯的原因，所以想把js初始化
-                 clearEntry.lastChild.nodeValue = "C";
                  defaultProcess.parentNode.setAttribute("class", "computingtextprocess");
                  defaultValue.parentNode.setAttribute("class","computingtextresult");
-                 defaultValue.setAttribute("class", "computingtextresult");
-             }
          }
      }
 
-     clearEntry.onclick =clearScreen();
-     //清除函數
-
+     clearEntry.onclick =fu;
 
 //     var clearEntry = document.getElementById("clearEntry");
 //     clearEntry.onclick = function () {
 ////                    var defaultProcess=document.getElementById("process").lastChild;
-////                    defaultProcess.nodeValue=defaultValue.nodeValue;         //清零前是否有必要把第二行的数值丢到第一行
+////                    defaultProcess.nodeValue=defaultValue.nodeValue;
 //         defaultValue.nodeValue = " ";
 //         defaultValue.parentNode.setAttribute("class", "computingtextresult")
 //         clearEntry.lastChild.nodeValue = "AC";
@@ -234,6 +230,42 @@
 //             clearEntry.lastChild.nodeValue = "C";
 //         }
 //     }
+    var operators=document.getElementsByName("operators");
+
+     //取正或者取負
+    var addSubtract=document.getElementById("addSubtract");
+        var ad=addSubtract.onclick=function() {
+//            if(defaultValuen.nodeValue.indexOf("×")>=0){
+//                var b= -+defaultValue.nodeValue.substr("×",1);
+//                defaultValue.nodeValue +=b;
+//            }
+//            else if(defaultValue.nodeValue.indexOf("÷")>=0){
+//                var c = -+defaultValue.nodeValue.substr("÷",1);
+//                defaultValue.nodeValue +=c;
+//            }
+//            else if(defaultValue.nodeValue.indexOf("-")>=0){
+//                var d = -+defaultValue.nodeValue.substr("-",1);
+//                defaultValue.nodeValue +=d;
+//            }
+//            else if(defaultValue.nodeValue.indexOf("+")>=0){
+//                var e = -+defaultValue.nodeValue.substr("+",1);
+//                defaultValue.nodeValue +=e;
+//            }
+//            else{
+                defaultValue.nodeValue = -+defaultValue.nodeValue;
+//            }
+
+        }
+
+     //取百分數
+    var percentage=document.getElementById("percentage");
+     var pe=percentage.onclick=function() {
+         defaultValue.nodeValue= defaultValue.nodeValue/100;
+//         var pe=percentage.onclick=function() {
+//             defaultValue.nodeValue= defaultValue.nodeValue/100;}
+      //pe;   //特別尷尬了，這樣引入自身函數的時候奇數次取百分數不正常
+     }
+    pe;
 
     //數字按鍵事件
     function clickNumber(bV) {
@@ -241,13 +273,13 @@
 //        var defaultProcess = document.getElementById("process").lastChild;
         defaultValue.nodeValue += bV;
         fontsizeSmall();
-        var operators = document.getElementsByName("operators");
+//        var operators = document.getElementsByName("operators");
         for (var i=0;i<operators.length;i++) {
             operators[i].onclick = function () {
                 var a = this.lastChild.nodeValue;
                 defaultValue.nodeValue += a;
                 fontsizeSmall();
-                //判斷輸入的運算符號進行運算后返回結果
+                //以下判斷輸入的運算符號進行運算后返回結果
                 if (a === "+") {
                     document.getElementById("equal").onclick = function () {
                         var firstNum = defaultValue.nodeValue.split("+")[0];
@@ -292,7 +324,5 @@
             }
     }
 </script>
-
-
 </body>
 </html>
