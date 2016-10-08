@@ -124,7 +124,7 @@
 <script type="text/javascript">
      window.onload=function(){
          ad;
-    // 	highLight();
+     	highLight();
      }
     alert("Start operation?");
 
@@ -173,15 +173,15 @@
              defaultProcess.parentNode.setAttribute("class", "smallFont3");
          }
      }
-
+var oldClass;
 //onmouseover高亮
     function highLight(){
         var numberButton=document.getElementsByTagName("th");
         for(var i=0;i<numberButton.length;i++){
-            var oldClass=numberButton[i].getAttribute("class");
-            numberButton[i].onmouseover=function(){
-                this.setAttribute("class","highLightCss");
-            }
+            numberButton[i].onmouseover=function() {
+                oldClass=this.getAttribute("class");
+                this.setAttribute("class", "highLightCss");
+                }
             numberButton[i].onmouseout=function(){
                 this.setAttribute("class",oldClass);
             }
