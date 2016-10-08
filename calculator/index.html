@@ -59,19 +59,17 @@
             position:absolute;
             bottom:0;
         }
-        .rightside,.operators,.equal{
+        .operators,.equal{
             background-color:#F98211;
         }
-        .leftside,.symbol,.numbers{
+        .symbol,.numbers{
             background-color:#C5C5C9;
             color:black;
         }
         .highLightCss{
             color:white;
         }
-        .newClass{
-            color: green;
-        }
+
         .smallFont2{
             font-size:34px;
             position:absolute;
@@ -121,9 +119,8 @@
 
 </div>
 
-<script type="text/javascript">
+<script type="text/javascript" charset="UTF-8">
      window.onload=function(){
-         ad;
      	highLight();
      }
     alert("Start operation?");
@@ -138,23 +135,9 @@
 
 10.7 增加小數運算功能
      取負和取正+/-
-     初始化JavaScript功能//避免清楚后數據錯亂
-
+     按键高亮
  */
 
-     //重置JS
-//     function reloadAbleJSFn(id,newJS)
-//     {
-//         var oldjs= null;
-//         var t= null;
-//         var oldjs = document.getElementById(id);
-//         if(oldjs) oldjs.parentNode.removeChild(oldjs);
-//         var scriptObj = document.createElement("script");
-//         scriptObj.src = newJS;
-//         scriptObj.type = "text/javascript";
-//         scriptObj.id   = id;
-//         document.getElementsByTagName("head")[0].appendChild(scriptObj);
-//     }
 
 //字體超過多位后調整字體大小
      var defaultValue = document.getElementById("resulttext").lastChild;
@@ -173,6 +156,7 @@
              defaultProcess.parentNode.setAttribute("class", "smallFont3");
          }
      }
+
 var oldClass;
 //onmouseover高亮
     function highLight(){
@@ -188,7 +172,7 @@ var oldClass;
         }
     }
 
-//    var numberButton=document.getElementsByTagName("th");
+    var operators=document.getElementsByName("operators");
     var numbers=document.getElementsByName("numbers");
     for(var i=0;i<numbers.length;i++){
         numbers[i].onclick=function(){
@@ -197,79 +181,34 @@ var oldClass;
         }
     }
 
-    //清除按鈕
+    //清除按鈕C清除一行/AC两行
      var clearEntry = document.getElementById("clearEntry");
      var fu=function clearScreen() {
          if (clearEntry.lastChild.nodeValue === "C") {
-//                    defaultProcess.nodeValue=defaultValue.nodeValue;         //清零前是否有必要把第二行的数值丢到第一行
+//           defaultProcess.nodeValue=defaultValue.nodeValue;         //清零前是否有必要把第二行的数值丢到第一行
              defaultValue.nodeValue = " ";
              defaultValue.parentNode.setAttribute("class", "computingtextresult"); //樣式初始化，避免有時候多位數（字體小）清空后新輸入的數字也是小字體
              clearEntry.lastChild.nodeValue = "AC";
          }
          else {
-//             clearEntry.onclick = function () {
                  defaultProcess.nodeValue = " ";
                  defaultValue.nodeValue = " ";
                  clearEntry.lastChild.nodeValue="C";
-//             reloadAbleJSFn(); //想引入初始化函數來著，然而不會寫（因為測試過程中發現AC過後運算有時候會出錯，然而還沒有找到出錯的原因，所以想把js初始化
                  defaultProcess.parentNode.setAttribute("class", "computingtextprocess");
                  defaultValue.parentNode.setAttribute("class","computingtextresult");
          }
      }
-
      clearEntry.onclick =fu;
 
-//     var clearEntry = document.getElementById("clearEntry");
-//     clearEntry.onclick = function () {
-////                    var defaultProcess=document.getElementById("process").lastChild;
-////                    defaultProcess.nodeValue=defaultValue.nodeValue;
-//         defaultValue.nodeValue = " ";
-//         defaultValue.parentNode.setAttribute("class", "computingtextresult")
-//         clearEntry.lastChild.nodeValue = "AC";
-//         clearEntry.onclick = function () {
-//             var defaultProcess = document.getElementById("process").lastChild;
-//             defaultProcess.nodeValue = " ";
-//             clearEntry.lastChild.nodeValue = "C";
-//         }
-//     }
-    var operators=document.getElementsByName("operators");
-
-     //取正或者取負
-    var addSubtract=document.getElementById("addSubtract");
-        var ad=addSubtract.onclick=function() {
-//            if(defaultValuen.nodeValue.indexOf("×")>=0){
-//                var b= -+defaultValue.nodeValue.substr("×",1);
-//                defaultValue.nodeValue +=b;
-//            }
-//            else if(defaultValue.nodeValue.indexOf("÷")>=0){
-//                var c = -+defaultValue.nodeValue.substr("÷",1);
-//                defaultValue.nodeValue +=c;
-//            }
-//            else if(defaultValue.nodeValue.indexOf("-")>=0){
-//                var d = -+defaultValue.nodeValue.substr("-",1);
-//                defaultValue.nodeValue +=d;
-//            }
-//            else if(defaultValue.nodeValue.indexOf("+")>=0){
-//                var e = -+defaultValue.nodeValue.substr("+",1);
-//                defaultValue.nodeValue +=e;
-//            }
-//            else{
-                defaultValue.nodeValue = -+defaultValue.nodeValue;
-//            }
-
-        }
-
-     //取百分數
+     //取百分數%
     var percentage=document.getElementById("percentage");
-     var pe=percentage.onclick=function() {
+            percentage.onclick=function() {
          defaultValue.nodeValue= defaultValue.nodeValue/100;
-//         var pe=percentage.onclick=function() {
-//             defaultValue.nodeValue= defaultValue.nodeValue/100;}
-      //pe;   //特別尷尬了，這樣引入自身函數的時候奇數次取百分數不正常
      }
-    pe;
 
-     var ad = addSubtract.onclick = function () {
+     //取正或者取負+/- //这个位置没写好，多次按时可能会出现问题，但是满足正常使用，所以想AC的时候重置js
+     var addSubtract=document.getElementById("addSubtract");
+        addSubtract.onclick = function () {
          if (defaultValue.nodeValue.indexOf("×") >= 0) {
              var b = -+defaultValue.nodeValue.split("×")[1];
              var firstNum = defaultValue.nodeValue.split("×")[0];
@@ -282,7 +221,6 @@ var oldClass;
                      defaultValue.nodeValue = firstNum + "×" + "(-" + secondNum + ")";
                      addSubtract.onclick = function () {
                          defaultValue.nodeValue = "有完没完？"
-                         ad;
                      }
                      document.getElementById("equal").onclick = function () {                       //第三次結果
                          fontsizeSmall();
@@ -314,7 +252,7 @@ var oldClass;
                      defaultValue.nodeValue = firstNum + "÷" + "(-" + secondNum + ")";
                      addSubtract.onclick = function () {
                          defaultValue.nodeValue = "有完没完？"
-                         ad;
+
                      }
                      document.getElementById("equal").onclick = function () {                       //第三次結果
                          fontsizeSmall();
@@ -346,7 +284,6 @@ var oldClass;
                      defaultValue.nodeValue = firstNum + "+" + "(-" + secondNum + ")";
                      addSubtract.onclick = function () {
                          defaultValue.nodeValue = "有完没完？"
-                         ad;
                      }
                      document.getElementById("equal").onclick = function () {                       //第三次結果
                          fontsizeSmall();
@@ -378,7 +315,6 @@ var oldClass;
                      defaultValue.nodeValue = firstNum + "-" + "(-" + secondNum + ")";
                      addSubtract.onclick = function () {
                          defaultValue.nodeValue = "有完没完？"
-                         ad;
                      }
                      document.getElementById("equal").onclick = function () {                       //第三次結果
                          fontsizeSmall();
@@ -398,54 +334,22 @@ var oldClass;
                  defaultValue.nodeValue = -addResult;                                                 //第一次結果
              }
          }
-
-
-//         else if (defaultValue.nodeValue.indexOf("÷") >= 0) {
-//             var c = -+defaultValue.nodeValue.split("÷")[1];
-//             defaultValue.nodeValue = defaultValue.nodeValue.split("÷")[0] + "÷("+c+")";
-//         }
-//         else if (defaultValue.nodeValue.indexOf("-") >= 0) {
-//             var d = -+defaultValue.nodeValue.split("-")[1];
-//             defaultValue.nodeValue = defaultValue.nodeValue.split("-")[0] + "-"+d+")";
-//         }
-//         else if (defaultValue.nodeValue.indexOf("+") >= 0) {
-//             var e = -+defaultValue.nodeValue.split("+")[1];
-//             defaultValue.nodeValue = defaultValue.nodeValue.split("+")[0] +"+" +e+")";
-//
-//         }
          else {
              defaultValue.nodeValue = -+defaultValue.nodeValue;
          }
      }
 
-
-
-
     //數字按鍵事件
     function clickNumber(bV) {
-//        var defaultValue = document.getElementById("resulttext").lastChild;
-//        var defaultProcess = document.getElementById("process").lastChild;
         defaultValue.nodeValue += bV;
         fontsizeSmall();
-//        var operators = document.getElementsByName("operators");
         for (var i = 0; i < operators.length; i++) {
             operators[i].onclick = function () {
                 var a = this.lastChild.nodeValue;
                 defaultValue.nodeValue += a;
                 fontsizeSmall();
-                addCalcu();
-                substractCalcu();
-                multiplyCalcu();
-                divisCalcu();
-                ad;
-//zheer
-                function calcuResult() {
-
-                }
-
                 //以下判斷輸入的運算符號進行運算后返回結果
-                function addCalcu() {
-
+                    //加法运算
                     if (a === "+") {
                         document.getElementById("equal").onclick = function () {
                             var firstNum = defaultValue.nodeValue.split("+")[0];
@@ -453,14 +357,10 @@ var oldClass;
                             var addResult = parseFloat(firstNum) + parseFloat(secondNum);
                             defaultProcess.nodeValue = defaultValue.nodeValue;
                             fontsizeSmall();
-                            ad;
                             defaultValue.nodeValue = addResult;      //這兒可能不夠嚴謹（没想到更好的方法，只好先将数字赋值给字符串
                         }
                     }
-                }
-
-                function substractCalcu() {
-
+                    //减法运算
                     if (a === "-") {
                         document.getElementById("equal").onclick = function () {
                             var firstNum = defaultValue.nodeValue.split("-")[0];
@@ -468,13 +368,9 @@ var oldClass;
                             var addResult = parseFloat(firstNum) - parseFloat(secondNum);
                             defaultProcess.nodeValue = defaultValue.nodeValue;
                             fontsizeSmall();
-                            ad;
                             defaultValue.nodeValue = addResult;
                         }
                     }
-                }
-
-                function multiplyCalcu() {
                     //乘法運算
                     if (a === "×") {
                         document.getElementById("equal").onclick = function () {
@@ -483,13 +379,9 @@ var oldClass;
                             var addResult = parseFloat(firstNum) * parseFloat(secondNum);
                             defaultProcess.nodeValue = defaultValue.nodeValue;
                             fontsizeSmall();
-                            ad;
                             defaultValue.nodeValue = addResult;
                         }
                     }
-                }
-
-                function divisCalcu() {
                     //除法運算
                     if (a === "÷") {
                         document.getElementById("equal").onclick = function () {
@@ -498,17 +390,12 @@ var oldClass;
                             var addResult = parseFloat(firstNum) / parseFloat(secondNum);
                             defaultProcess.nodeValue = defaultValue.nodeValue;
                             fontsizeSmall();
-                            ad;
                             defaultValue.nodeValue = addResult;
                         }
                     }
-                }
             }
         }
     }
-
-
-
 </script>
 </body>
 </html>
