@@ -8,13 +8,15 @@
         margin: 0;
         padding: 0;
         color:black;
+        font-family: Helvetica;
     }
     .wrap{
-        margin-left: 300px;
-        widtd: 800px;
-        height: 700px;
-        background-color: #1f88ff;
+        margin-left: 30%;
+        width: 490px;
+        height: 720px;
+        background-color: rgb(231, 240, 249);
         position: absolute;
+        top: 0;
     }
     table{
         /*border-spacing:1px;*/
@@ -25,153 +27,416 @@
         /*table-layout:fixed;*/
         /*font-size:36px;*/
         position:relative;
-        top: 20px;
+        top: 10px;
+        left: 40px;
         /*color:whitesmoke;*/
     }
-    input{
+    table input{
+        width: 25px;
+        height: 25px;
+        color: #1d3e81;
+        text-align: center;
+        font-size: 18px;
+    }
+    a{
+        text-align: center;
+        font-size: 20px;
+    }
+    input.date{
+        width: 120px;
+    }
+    .wrap .title{
+        margin: 20px auto;
+        font-size: 25px;
+        text-align: center;
+    }
+    .wrap input.titleS{
+        width: 170px;
+        height: 30px;
+        text-align: center;
+        font-size: 26px;
+    }
+    .wrap input.titleN{
         width: 30px;
         height: 30px;
+        text-align: center;
+        font-size: 26px;
     }
-    /*input.class{*/
-        /*width: 80px;*/
-    /*}*/
-
+    .setBu{
+        width: 360px;
+        height: 100px;
+        margin:60px 20px 20px 20px;
+        line-height: 30px;
+    }
+    .setBu input{
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .setBu input.shen{
+        width: 54px;
+        height: 33px;
+        font-size: 15px;
+    }
 
 </style>
 </head>
 <body>
-test
+<div class="setBu">
+    <a>开学日期： </a>
+    <input type="text" id="beginMo"><a>月</a>
+    <input type="text" id="beginDa"><a>日</a><br><a>这学期一共有</a>
+    <input type="text" id="allWeek"><a>周，</a><br><a>校历从第</a>
+    <input type="text" id="beginWe"><a>周开始。</a><br><a>┏ (゜ω゜)=☞</a>
+    <input type="button" class="shen" value="生成 >" onclick="goW()">
+</div>
 <div class="wrap">
+    <div class="title">
+    <input class="titleS" width="100px" type="text" > 第 <input type="text" class="titleN"> 学期校历
+        </div>
 <table>
         <tr>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" class="date"></td>
+            <td><input type="text" name="week"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="month"> </td>
+            <td><input type="text" class="date"> </td>
         </tr>
         <tr>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" class="date"></td>
+            <td><input type="text" name="week"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="month"> </td>
+            <td><input type="text" class="date"> </td>
         </tr>
         <tr>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" class="date"></td>
+            <td><input type="text" name="week"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="month"> </td>
+            <td><input type="text" class="date"> </td>
         </tr>
         <tr>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" class="date"></td>
+            <td><input type="text" name="week"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="month"> </td>
+            <td><input type="text" class="date"> </td>
         </tr>
         <tr>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" class="date"></td>
+            <td><input type="text" name="week"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="month"> </td>
+            <td><input type="text" class="date"> </td>
         </tr>
         <tr>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" class="date"></td>
+            <td><input type="text" name="week"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="month"> </td>
+            <td><input type="text" class="date"> </td>
         </tr>
         <tr>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" class="date"></td>
+            <td><input type="text" name="week"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="month"> </td>
+            <td><input type="text" class="date"> </td>
         </tr>
         <tr>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" class="content"></td>
+            <td><input type="text" name="week"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="month"> </td>
+            <td><input type="text" class="date"> </td>
         </tr>
         <tr>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" name="date"></td>
-            <td ><input type="text" class="date"></td>
+            <td><input type="text" name="week"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="month"> </td>
+            <td><input type="text" class="date"> </td>
+        </tr>
+        <tr>
+            <td><input type="text" name="week"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="month"> </td>
+            <td><input type="text" class="date"> </td>
+        </tr>
+        <tr>
+            <td><input type="text" name="week"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="month"> </td>
+            <td><input type="text" class="date"> </td>
+        </tr>
+        <tr>
+            <td><input type="text" name="week"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="month"> </td>
+            <td><input type="text" class="date"> </td>
+        </tr>
+        <tr>
+            <td><input type="text" name="week"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="month"> </td>
+            <td><input type="text" class="date"> </td>
+        </tr>
+        <tr>
+            <td><input type="text" name="week"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="month"> </td>
+            <td><input type="text" class="date"> </td>
+        </tr>
+        <tr>
+            <td><input type="text" name="week"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="month"> </td>
+            <td><input type="text" class="date"> </td>
+        </tr>
+        <tr>
+            <td><input type="text" name="week"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="month"> </td>
+            <td><input type="text" class="date"> </td>
+        </tr>
+        <tr>
+            <td><input type="text" name="week"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="month"> </td>
+            <td><input type="text" class="date"> </td>
+        </tr>
+        <tr>
+            <td><input type="text" name="week"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="month"> </td>
+            <td><input type="text" class="date"> </td>
+        </tr>
+        <tr>
+            <td><input type="text" name="week"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="month"> </td>
+            <td><input type="text" class="date"> </td>
+        </tr>
+        <tr>
+            <td><input type="text" name="week"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="date"> </td>
+            <td><input type="text" name="month"> </td>
+            <td><input type="text" class="date"> </td>
         </tr>
 </table>
-<!--<input type="button" onclick="fuzhi()" value="赋值">-->
 </div>
 <script type="text/javascript">
+    var weeks=document.getElementsByName("week");
+    var beginDate=document.getElementById("beginDa");
+    var beginMonth=document.getElementById("beginMo");
+    var beginWe=document.getElementById("beginWe");
+    var allWeek=document.getElementById("allWeek");
+    var allDays=document.getElementsByName("date");
 
-    var a=document.getElementsByName("date");
-//    document.write(a.tagName);
-//    var dates=document.getElementsByName("date");
-//    function fuzhi() {
-    var i=0;
-    while(i<a.length);
-    {
-//        var i=0;
-        a[i].value = i;
-        i++;
+    var m = 0;
+    function howMany(bM) {
+        if (bM.value === "2") {
+            m = 28;
+        }
+        else if (bM.value === "4") {
+            m = 30;
+        }
+        else if (bM.value === "6") {
+            m = 30;
+        }
+        else if (bM.value === "9") {
+            m = 30;
+        }
+        else if (bM.value === "11") {
+            m = 30;
+        }
+        else {
+            m = 31;
+        }
+        //好捉急的判断月份的方法诶
     }
-    //        var nember[i]=new Array
-//        dates.value=i;
-//        document.write(dates.value);
-//        alert(dates.length);
-//    }
+
+    var j=0;
+    function goW() {
+        var ww=beginWe.value;
+        var w=0;
+        while(w<allWeek.value){
+            weeks[w].value=ww;
+            w++;
+            ww++;//填充周次完毕
+        }
+
+        howMany(beginMonth); //得到beginMonth当月总天数
+        var i=beginDate.value;//以下开始填充第一个月的日期
+        while (i<=m) {
+            allDays[j].value=i;
+            i++;
+            j++;
+        }
+
+        howMany(beginMonth++);
+        var k=1;
+        while (k <= m) {
+            allDays[j].value = k;
+            k++;
+            j++;
+        }
+
+        var l=1;
+        howMany(beginMonth++)
+        while (l <= m) {
+            allDays[j].value = l;
+            l++;
+            j++;
+        }
+        var o=1;
+        howMany(beginMonth++)
+        while (o<=m){
+            allDays[j].value = o;
+            o++;
+            j++;
+        }
+        var p=1;
+        howMany(beginMonth++)
+        while (p <= m) {
+            allDays[j].value = p;
+            p++;
+            j++;
+        }
+        var q=1;
+        howMany(beginMonth++)
+        while (q<=m){
+            allDays[j].value = q;
+            q++;
+            j++;
+        }
+        var r=1;
+        howMany(beginMonth++)
+        while (r<=m){
+            allDays[j].value = r;
+            r++;
+            j++;
+        }
+
+
+    }
+
+/*日志
+输错开学日期后重新输入，单击按钮的时候要将表中原来生成的日期清空
+*/
 </script>
 </body>
 </html>
