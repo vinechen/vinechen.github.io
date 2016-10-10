@@ -32,20 +32,22 @@
         left: 40px;
         /*color:whitesmoke;*/
     }
-    table input{
+
+    a{
+        text-align: center;
+        font-size: 20px;
+    }
+    table a{
         width: 25px;
         height: 25px;
         color: #1d3e81;
         text-align: center;
         font-size: 18px;
-        border: 0;
-        background-color: rgb(231, 240, 249);
+        /*border: 0;*/
+        /*background-color: rgb(231, 240, 249);*/
     }
-    a{
-        text-align: center;
-        font-size: 20px;
-    }
-    input.date{
+
+    td.content{
         width: 120px;
     }
     .wrap .title{
@@ -117,7 +119,16 @@
     <input type="text" id="beginDa"><a>日</a><br><a>这学期一共有</a>
     <input type="text" id="allWeek"><a>周，</a><br><a>校历从第</a>
     <input type="text" id="beginWe"><a>周开始。</a><br><a>┏ (゜ω゜)=☞</a>
+    <!--<br><a>备注信息</a>-->
+    <!--<input type="text" id="content">-->
     <input type="button" class="shen" value="生成 >" onclick="goW()"><br><br>
+    <textarea placeholder="九月份备注信息"></textarea><br>
+    <textarea placeholder="十月份备注信息"></textarea><br>
+    <textarea placeholder="十一月份备注信息"></textarea><br>
+    <textarea placeholder="十二月份备注信息"></textarea><br>
+    <textarea placeholder="一月份备注信息"></textarea><br>
+
+
     <input type="button" value="去除标题下划线" class="qu" onclick="noUnder()">
     <input type="button" value="重命名标签" class="qu" onclick="reName()">
 
@@ -137,7 +148,7 @@
             <td name="date"> </td>
             <td name="date"> </td>
             <td name="month"> </td>
-            <td name="content"> </td>
+            <td name="content" class="content"> </td>
         </tr>
         <tr>
             <td name="week" class="week"> </td>
@@ -149,7 +160,7 @@
             <td name="date"> </td>
             <td name="date"> </td>
             <td name="month"> </td>
-            <td name="content"> </td>
+            <td name="content" class="content"> </td>
         </tr>
         <tr>
             <td name="week" class="week"> </td>
@@ -161,7 +172,7 @@
             <td name="date"> </td>
             <td name="date"> </td>
             <td name="month"> </td>
-            <td name="content"> </td>
+            <td name="content" class="content"> </td>
         </tr>
         <tr>
             <td name="week" class="week"> </td>
@@ -173,7 +184,7 @@
             <td name="date"> </td>
             <td name="date"> </td>
             <td name="month"> </td>
-            <td name="content"> </td>
+            <td name="content" class="content"> </td>
         </tr>
         <tr>
             <td name="week" class="week"> </td>
@@ -185,7 +196,7 @@
             <td name="date"> </td>
             <td name="date"> </td>
             <td name="month"> </td>
-            <td name="content"> </td>
+            <td name="content" class="content"> </td>
         </tr>
         <tr>
             <td name="week" class="week"> </td>
@@ -197,7 +208,7 @@
             <td name="date"> </td>
             <td name="date"> </td>
             <td name="month"> </td>
-            <td name="content"> </td>
+            <td name="content" class="content"> </td>
         </tr>
         <tr>
             <td name="week" class="week"> </td>
@@ -209,7 +220,7 @@
             <td name="date"> </td>
             <td name="date"> </td>
             <td name="month"> </td>
-            <td name="content"> </td>
+            <td name="content" class="content"> </td>
         </tr>
         <tr>
             <td name="week" class="week"> </td>
@@ -221,7 +232,7 @@
             <td name="date"> </td>
             <td name="date"> </td>
             <td name="month"> </td>
-            <td name="content"> </td>
+            <td name="content" class="content"> </td>
         </tr>
         <tr>
             <td name="week" class="week"> </td>
@@ -233,7 +244,7 @@
             <td name="date"> </td>
             <td name="date"> </td>
             <td name="month"> </td>
-            <td name="content"> </td>
+            <td name="content" class="content"> </td>
         </tr>
         <tr>
             <td name="week" class="week"> </td>
@@ -245,7 +256,7 @@
             <td name="date"> </td>
             <td name="date"> </td>
             <td name="month"> </td>
-            <td name="content"> </td>
+            <td name="content" class="content"> </td>
         </tr>
         <tr>
             <td name="week" class="week"> </td>
@@ -257,7 +268,7 @@
             <td name="date"> </td>
             <td name="date"> </td>
             <td name="month"> </td>
-            <td name="content"> </td>
+            <td name="content" class="content"> </td>
         </tr>
         <tr>
             <td name="week" class="week"> </td>
@@ -269,7 +280,7 @@
             <td name="date"> </td>
             <td name="date"> </td>
             <td name="month"> </td>
-            <td name="content"> </td>
+            <td name="content" class="content"> </td>
         </tr>
         <tr>
             <td name="week" class="week"> </td>
@@ -281,7 +292,7 @@
             <td name="date"> </td>
             <td name="date"> </td>
             <td name="month"> </td>
-            <td name="content"> </td>
+            <td name="content" class="content"> </td>
         </tr>
         <tr>
             <td name="week" class="week"> </td>
@@ -293,7 +304,7 @@
             <td name="date"> </td>
             <td name="date"> </td>
             <td name="month"> </td>
-            <td name="content"> </td>
+            <td name="content" class="content"> </td>
         </tr>
         <tr>
             <td name="week" class="week"> </td>
@@ -305,7 +316,7 @@
             <td name="date"> </td>
             <td name="date"> </td>
             <td name="month"> </td>
-            <td name="content"> </td>
+            <td name="content" class="content"> </td>
         </tr>
         <tr>
             <td name="week" class="week"> </td>
@@ -317,7 +328,7 @@
             <td name="date"> </td>
             <td name="date"> </td>
             <td name="month"> </td>
-            <td name="content"> </td>
+            <td name="content" class="content"> </td>
         </tr>
         <tr>
             <td name="week" class="week"> </td>
@@ -329,7 +340,7 @@
             <td name="date"> </td>
             <td name="date"> </td>
             <td name="month"> </td>
-            <td name="content"> </td>
+            <td name="content" class="content"> </td>
         </tr>
         <tr>
             <td name="week" class="week"> </td>
@@ -341,7 +352,7 @@
             <td name="date"> </td>
             <td name="date"> </td>
             <td name="month"> </td>
-            <td name="content"> </td>
+            <td name="content" class="content"> </td>
         </tr>
         <tr>
             <td name="week" class="week"> </td>
@@ -353,7 +364,7 @@
             <td name="date"> </td>
             <td name="date"> </td>
             <td name="month"> </td>
-            <td name="content"> </td>
+            <td name="content" class="content"> </td>
         </tr>
         <tr>
             <td name="week" class="week"> </td>
@@ -365,7 +376,7 @@
             <td name="date"> </td>
             <td name="date"> </td>
             <td name="month"> </td>
-            <td name="content"> </td>
+            <td name="content" class="content"> </td>
         </tr>
 </table>
 </div>
@@ -405,7 +416,7 @@
         var ww=beginWe.value;
         var w=0;
         while(w<allWeek.value){
-            weeks[w].value=ww;
+            weeks[w].innerHTML=ww;
             w++;
             ww++;//填充周次完毕
         }
@@ -413,7 +424,7 @@
         howMany(beginMonth); //得到beginMonth当月总天数
         var i=beginDate.value;//以下开始填充第一个月的日期
         while (i<=m) {
-            allDays[j].value=i;
+            allDays[j].innerHTML=i;
             i++;
             j++;
         }
@@ -421,7 +432,7 @@
         howMany(beginMonth++);
         var k=1;
         while (k <= m) {
-            allDays[j].value = k;
+            allDays[j].innerHTML = k;
             k++;
             j++;
         }
@@ -429,35 +440,35 @@
         var l=1;
         howMany(beginMonth++)
         while (l <= m) {
-            allDays[j].value = l;
+            allDays[j].innerHTML = l;
             l++;
             j++;
         }
         var o=1;
         howMany(beginMonth++)
         while (o<=m){
-            allDays[j].value = o;
+            allDays[j].innerHTML = o;
             o++;
             j++;
         }
         var p=1;
         howMany(beginMonth++)
         while (p<=m) {
-            allDays[j].value = p;
+            allDays[j].innerHTML = p;
             p++;
             j++;
         }
         var q=1;
         howMany(beginMonth++)
         while (q<=m){
-            allDays[j].value = q;
+            allDays[j].innerHTML = q;
             q++;
             j++;
         }
         var r=1;
         howMany(beginMonth++)
         while (r<=m){
-            allDays[j].value = r;
+            allDays[j].innerHTML = r;
             r++;
             j++;
         }
