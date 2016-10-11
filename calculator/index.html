@@ -62,7 +62,7 @@
         .operators,.equal{
             background-color:#F98211;
         }
-        .symbol,.numbers{
+        .symbol,.numbers,.history{
             background-color:#C5C5C9;
             color:black;
         }
@@ -110,11 +110,11 @@
     <!--keyboard begins here-->
 
     <table>
-        <tr><th  class="symbol" id="clearEntry">C</th><th  class="symbol" id="addSubtract">+/-</th><th class="symbol" id="percentage">%</th><th  class="operators" name="operators" id="multiply">×</th></tr>
+        <tr><th  class="symbol" id="clearEntry">AC</th><th  class="symbol" id="addSubtract">+/-</th><th class="symbol" id="percentage">%</th><th  class="operators" name="operators" id="multiply">×</th></tr>
         <tr><th  class="numbers" name="numbers" id="7">7</th><th  class="numbers" name="numbers" id="8">8</th><th  class="numbers" name="numbers" id="9">9</th><th  class="operators" name="operators" id="divide">÷</th></tr>
         <tr><th  class="numbers" name="numbers" id="4">4</th><th  class="numbers" name="numbers" id="5">5</th><th  class="numbers" name="numbers" id="6">6</th><th  class="operators" name="operators" id="subtract">-</th></tr>
         <tr><th  class="numbers" name="numbers" id="1">1</th><th  class="numbers" name="numbers" id="2">2</th><th  class="numbers" name="numbers" id="3">3</th><th  class="operators" name="operators" id="add">+</th></tr>
-        <tr><th colspan="2"  class="numbers" name="numbers" id="0">0</th><th  class="symbol" name="numbers" id="point">.</th><th  class="equal" id="equal">=</th></tr>
+        <tr><th  class="numbers" name="numbers" id="0">0</th><th  class="symbol" name="numbers" id="point">.</th><th  class="history" name="history" id="history"><</th><th  class="equal" id="equal">=</th></tr>
     </table>
 
 </div>
@@ -181,23 +181,14 @@ var oldClass;
         }
     }
 
-    //清除按鈕C清除一行/AC两行
      var clearEntry = document.getElementById("clearEntry");
      var fu=function clearScreen() {
-         if (clearEntry.lastChild.nodeValue === "C") {
-//           defaultProcess.nodeValue=defaultValue.nodeValue;         //清零前是否有必要把第二行的数值丢到第一行
-             defaultValue.nodeValue = " ";
-             defaultValue.parentNode.setAttribute("class", "computingtextresult"); //樣式初始化，避免有時候多位數（字體小）清空后新輸入的數字也是小字體
-             clearEntry.lastChild.nodeValue = "AC";
-         }
-         else {
                  defaultProcess.nodeValue = " ";
                  defaultValue.nodeValue = " ";
-                 clearEntry.lastChild.nodeValue="C";
+                 clearEntry.lastChild.nodeValue="AC";
                  defaultProcess.parentNode.setAttribute("class", "computingtextprocess");
                  defaultValue.parentNode.setAttribute("class","computingtextresult");
-         }
-     }
+     } //在后面添加了数字按键及+/-点击触发AC向C的变化
      clearEntry.onclick =fu;
 
      //取百分數%
@@ -206,10 +197,26 @@ var oldClass;
          defaultValue.nodeValue= defaultValue.nodeValue/100;
      }
 
+     var historyResult=new Array(5);//记录五个结果
+     var h=historyResult.length-1;
+     var historyButton=document.getElementById("history");
+     var ho=historyButton.onclick=function () {
+         defaultProcess.nodeValue=historyResult[h];
+         ho;
+         if(h==0) h=historyResult.length;
+         h--;
+     }
+     //定义栈推入（最后一项）和队列移出（第一项）
+     function hist() {
+         historyResult.push(defaultValue.nodeValue);
+         if(historyResult.length>5) historyResult.shift();
+     }
+
      //取正或者取負+/- //这个位置没写好，多次按时可能会出现问题，但是满足正常使用，所以想AC的时候重置js
      var addSubtract=document.getElementById("addSubtract");
         addSubtract.onclick = function () {
-         if (defaultValue.nodeValue.indexOf("×") >= 0) {
+            clearEntry.lastChild.nodeValue="C";
+            if (defaultValue.nodeValue.indexOf("×") >= 0) {
              var b = -+defaultValue.nodeValue.split("×")[1];
              var firstNum = defaultValue.nodeValue.split("×")[0];
              var secondNum = defaultValue.nodeValue.split("×")[1];
@@ -226,18 +233,21 @@ var oldClass;
                          fontsizeSmall();
                          defaultProcess.nodeValue = defaultValue.nodeValue;
                          defaultValue.nodeValue = -addResult;
+                         hist();
                      }
                  }
                  document.getElementById("equal").onclick = function () {                   //第二次結果
                      fontsizeSmall();
                      defaultProcess.nodeValue = defaultValue.nodeValue;
                      defaultValue.nodeValue = addResult;
+                     hist();
                  }
              }
              document.getElementById("equal").onclick = function () {
                  fontsizeSmall();
                  defaultProcess.nodeValue = defaultValue.nodeValue;
                  defaultValue.nodeValue = -addResult;                                                 //第一次結果
+                 hist();
              }
          }
          else if (defaultValue.nodeValue.indexOf("÷") >= 0) {
@@ -258,18 +268,21 @@ var oldClass;
                          fontsizeSmall();
                          defaultProcess.nodeValue = defaultValue.nodeValue;
                          defaultValue.nodeValue = -addResult;
+                         hist();
                      }
                  }
                  document.getElementById("equal").onclick = function () {                   //第二次結果
                      fontsizeSmall();
                      defaultProcess.nodeValue = defaultValue.nodeValue;
                      defaultValue.nodeValue = addResult;
+                     hist();
                  }
              }
              document.getElementById("equal").onclick = function () {
                  defaultProcess.nodeValue = defaultValue.nodeValue;
                  fontsizeSmall();
                  defaultValue.nodeValue = -addResult;                                                 //第一次結果
+                 hist();
              }
          }
          else if (defaultValue.nodeValue.indexOf("+") >= 0) {
@@ -289,18 +302,21 @@ var oldClass;
                          fontsizeSmall();
                          defaultProcess.nodeValue = defaultValue.nodeValue;
                          defaultValue.nodeValue = -addResult;
+                         hist()
                      }
                  }
                  document.getElementById("equal").onclick = function () {                   //第二次結果
                      fontsizeSmall();
                      defaultProcess.nodeValue = defaultValue.nodeValue;
                      defaultValue.nodeValue = addResult;
+                     hist();
                  }
              }
              document.getElementById("equal").onclick = function () {
                  fontsizeSmall();
                  defaultProcess.nodeValue = defaultValue.nodeValue;
                  defaultValue.nodeValue = -addResult;                                                 //第一次結果
+                 hist();
              }
          }
          else if (defaultValue.nodeValue.indexOf("-") >= 0) {
@@ -320,18 +336,21 @@ var oldClass;
                          fontsizeSmall();
                          defaultProcess.nodeValue = defaultValue.nodeValue;
                          defaultValue.nodeValue = -addResult;
+                         hist();
                      }
                  }
                  document.getElementById("equal").onclick = function () {                   //第二次結果
                      fontsizeSmall();
                      defaultProcess.nodeValue = defaultValue.nodeValue;
                      defaultValue.nodeValue = addResult;
+                     hist();
                  }
              }
              document.getElementById("equal").onclick = function () {
                  fontsizeSmall();
                  defaultProcess.nodeValue = defaultValue.nodeValue;
                  defaultValue.nodeValue = -addResult;                                                 //第一次結果
+                 hist();
              }
          }
          else {
@@ -341,6 +360,8 @@ var oldClass;
 
     //數字按鍵事件
     function clickNumber(bV) {
+        clearEntry.lastChild.nodeValue="C";
+
         defaultValue.nodeValue += bV;
         fontsizeSmall();
         for (var i = 0; i < operators.length; i++) {
@@ -358,6 +379,7 @@ var oldClass;
                             defaultProcess.nodeValue = defaultValue.nodeValue;
                             fontsizeSmall();
                             defaultValue.nodeValue = addResult;      //這兒可能不夠嚴謹（没想到更好的方法，只好先将数字赋值给字符串
+                            hist();
                         }
                     }
                     //减法运算
@@ -369,6 +391,7 @@ var oldClass;
                             defaultProcess.nodeValue = defaultValue.nodeValue;
                             fontsizeSmall();
                             defaultValue.nodeValue = addResult;
+                            hist();
                         }
                     }
                     //乘法運算
@@ -380,6 +403,7 @@ var oldClass;
                             defaultProcess.nodeValue = defaultValue.nodeValue;
                             fontsizeSmall();
                             defaultValue.nodeValue = addResult;
+                            hist();
                         }
                     }
                     //除法運算
@@ -391,6 +415,7 @@ var oldClass;
                             defaultProcess.nodeValue = defaultValue.nodeValue;
                             fontsizeSmall();
                             defaultValue.nodeValue = addResult;
+                            hist();
                         }
                     }
             }
