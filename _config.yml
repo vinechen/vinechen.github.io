@@ -28,9 +28,9 @@ sass:
 # Comments
   #disqus_shortname:
 comments:
-provider:           duoshuo
+provider: duoshuo
 duoshuo:
-  short_name:       vinechen
+short_name: vinechen
 # Social
 # if you don't have any of social below, comment the line.
 google:
@@ -56,7 +56,7 @@ github:             vinechen
 #dribbble:          username
 #youtube:           username
 #soundcloud:        username
-weibo:             234960910
+weibo:              234960910
 #flickr:            username
 #codepen:           username
 #keybase:           username
