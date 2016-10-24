@@ -26,7 +26,12 @@ sass:
   style:            compressed
 
 # Comments
-  disqus_shortname: vinechen
+  #disqus_shortname: vinechen
+  # Comment setting
+comments :
+  provider : duoshuo
+  duoshuo :
+    short_name : vinechen
 # comments:
 # provider: duoshuo
 # duoshuo:
