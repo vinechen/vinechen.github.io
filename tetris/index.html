@@ -11,29 +11,46 @@
         .wrap{
             width: 350px;
             height: 630px;
-            background-color: #66d9ef;
-            margin: 15px auto;
+            position: absolute;
+            margin-left: 37%;
+            margin-top: 20px;
         }
         table{
-
+            margin-left: 5px;
+            width: 350px;
+            height: 630px;
+            border: 2px solid bisque;
+        }
+        tr{
+        }
+        td {
+            background-color: #bee7ef;
+        }
+        .info{
+            margin-left: 80px;
+            margin-top: 90px;
+            float: left;
         }
     </style>
 </head>
 <body>
+<div class="info">
+    <input type="text" id="which"><input type="button" value="print" onclick="printGrids()">
+</div>
 <div class="wrap">
-    <table>
+    <table id="game">
         <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
         <tr>
             <td></td>
             <td></td>
@@ -241,5 +258,20 @@
     </table>
 </div>
 
+<script type="text/javascript">
+    var gametable=document.getElementById("game");
+    var rows=gametable.getElementsByTagName("tr");
+    function printGrids() {
+        var i=document.getElementById("which").value;
+//        for (var i = 0; i < rows.length; i++) {
+            var columns = rows[i].getElementsByTagName("td");
+            for (var j = 0; j < columns.length; j++) {
+                columns[1].setAttribute("style", "background-color: #1d3e81");
+                console.log(i);
+            }
+//        }
+    }
+
+</script>
 </body>
 </html>
