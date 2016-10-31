@@ -27,14 +27,52 @@
             background-color: #bee7ef;
         }
         .info{
-            margin-left: 80px;
-            margin-top: 90px;
+            margin-left: 290px;
+            margin-top: 55px;
             float: left;
+        }
+        .info table{
+            margin-left: 5px;
+            width: 140px;
+            height: 140px;
+            border: 2px solid bisque;
+        }
+        .info td {
+            background-color: black;
         }
     </style>
 </head>
 <body>
 <div class="info">
+    <table>
+        <tr>
+            <td></td>
+            <td style="background-color: #bee7ef"></td>
+            <td style="background-color: #bee7ef"></td>
+            <td></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+            <td style="background-color: #bee7ef"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td style="background-color: #bee7ef"></td>
+
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td style="background-color: #bee7ef"></td>
+            <td style="background-color: #bee7ef"></td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+    <br>
     <input type="text" id="which"><input type="button" value="print" onclick="printGrids()">
 </div>
 <div class="wrap">
@@ -260,17 +298,37 @@
 
 <script type="text/javascript">
     var gametable=document.getElementById("game");
-    var rows=gametable.getElementsByTagName("tr");
-    function printGrids() {
-        var i=document.getElementById("which").value;
-//        for (var i = 0; i < rows.length; i++) {
-            var columns = rows[i].getElementsByTagName("td");
-            for (var j = 0; j < columns.length; j++) {
-                columns[1].setAttribute("style", "background-color: #1d3e81");
-                console.log(i);
-            }
-//        }
+    var rowss = gametable.getElementsByTagName("tr");
+    function printGrids(a,b) {
+        var columns = rowss[a].getElementsByTagName("td");
+        columns[b].setAttribute("style", "background-color: black");
+//        setInterval(deleteGrids(a,b),500);
     }
+    printGrids(17,2);
+    printGrids(16,2);
+    printGrids(15,2);
+    printGrids(14,2);
+    printGrids(17,4);
+    printGrids(16,4);
+    printGrids(15,4);
+    printGrids(14,4);
+    printGrids(17,6);
+    printGrids(16,6);
+    printGrids(15,6);
+    printGrids(14,6);
+    printGrids(17,5);
+    printGrids(14,5);
+
+//    function deleteGrids(roW,coL) {
+//        var columns= rows[roW].getElementsByTagName("td");
+//        console.log(rows.length);
+//        columns[coL].setAttribute("style", "background-color: #bee7ef");
+//        roW++;
+//        printGrids(roW,coL);
+//    }
+//    function dropDown() {
+//        setInterval(printGrids,500);
+//    }
 
 </script>
 </body>
