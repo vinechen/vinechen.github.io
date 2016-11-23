@@ -7,4 +7,6 @@ tags: [碎笔]
 comments: true
 published: true
 ---
-等有一天我老了，就去图书馆找一份工作，每天拿着放大镜看报纸。The Economist, The Guardian, U.S News & World Report, The Washington Post, USA Today, Time, The New York Times, New Scientist.
+等有一天我老了，就去图书馆找一份工作，每天拿着放大镜看报纸。The Economist, The Guardian, U.S News & World Report, The Washington Post, USA Today, Time, The New York Times, New Scientist. 
+ 
+ 哪儿有什么孤独，人不过是群居的独居动物。好在内心戏丰富。
