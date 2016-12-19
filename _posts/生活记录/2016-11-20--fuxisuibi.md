@@ -32,4 +32,4 @@ published: true
 12.17  
 考试临近带给我的忧虑，远远没有夏同学的言行带给我的多。  
 12.19  
-That which does not kill us makes us stronger, Nietzsche once said, just as the fuking examination which I have been preparing since seventy days ago.  
+That which does not kill us makes us stronger, Nietzsche once said, just as the fuking examination which I have been preparing for seventy days.  
