@@ -30,4 +30,6 @@ published: true
 12.16  
 终于也产生了疲惫感，怎么形容呢，厌学症。  
 12.17  
-考试临近带给我的忧虑，远远没有夏同学的言行带给我的多。  
+考试临近带给我的忧虑，远远没有夏同学的言行带给我的多。  
+12.19  
+That which does not kill us makes us stronger, Nietzsche once said, just as the fuking examination which I have been preparing since seventy days ago.  
