@@ -33,3 +33,5 @@ published: true
 考试临近带给我的忧虑，远远没有夏同学的言行带给我的多。  
 12.19  
 做了一套模拟题，决定撤回前天说的话。  
+12.22  
+Our time is running out.  
