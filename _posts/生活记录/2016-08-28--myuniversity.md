@@ -2,7 +2,7 @@
 layout: post
 title: 大学回收站
 date: 2016-08-28
-excerpt: "大四了"
+excerpt: "转眼就大四了"
 tags: [结绳记事]
 comments: true
 published: true
