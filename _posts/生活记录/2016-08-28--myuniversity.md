@@ -12,4 +12,4 @@ published: true
 
 
 
-![](http://img.vinechen.com/16-8-28/90983732.jpg)
+![](http://img.vinechen.com/gongzai.jpg)
