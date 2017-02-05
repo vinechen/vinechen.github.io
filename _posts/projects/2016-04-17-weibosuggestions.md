@@ -10,7 +10,7 @@ published: true
 feature: http://img.vinechen.com/16-8-19/51166253.jpg
 ---
 ```html
-在微博实习期间提出了一些改善产品交互的建议，在以下展开讨论。
+提出的一些改善产品交互的建议，在以下展开讨论。
 ```
 
 ![](http://img.vinechen.com/%E4%B8%8D%E6%88%90%E7%86%9F%E7%9A%84%E5%B0%8F%E5%BB%BA%E8%AE%AE.jpg)
