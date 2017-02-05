@@ -3,7 +3,7 @@ layout: post
 title: 复习碎笔
 date: 2016-11-20
 excerpt: "今天距离圣诞节还有多少天呢"
-tags: [碎笔]
+tags: [生活记录]
 comments: true
 published: true
 ---
