@@ -9,23 +9,29 @@
         a:visited {  color: #000000; text-decoration: none}
         a:hover {  color: #000000; text-decoration: none}
         -->
-        body{margin: 0;padding: 0}
+        body{margin: 0;padding: 0;background: url(http://7xrrtk.com1.z0.glb.clouddn.com/17-10-26/19190093.jpg) no-repeat;}
         .top{height: 80px;
             width: 100%;
             top: 0px;
             position: fixed;
-            background-color: #e3e2e5;
+            background-color: white;
             /* for IE */
-            filter:alpha(opacity=85);
+            filter:alpha(opacity=90);
             /* CSS3 standard */
-            opacity:0.85;}
+            opacity:0.9;
+        z-index: 1;
+        }
         .nav-ul{
             margin-left:-15px;
             float:left;
             font-size: 18px;
             list-style: none;
             line-height:40px;
+            position: relative;
         }
+
+        /*tab文字未固定*/
+
         .nav-ul a:hover{cursor:pointer;text-decoration:none!important}
         .nav-li{
             float: left;
@@ -34,6 +40,24 @@
             width: auto;
         }
         .nav-li a:hover{color:blue;}
+        .topban{
+            width: 1200px;
+            height: auto;
+            overflow: auto;
+            margin: 130px auto 50px;
+        }
+        .topban1{
+            position: relative;
+        }
+        .topban2{
+            background-color: white;
+            width: 300px;
+            height: 450px;
+            float: right;
+        }
+        .contact1{
+            position: fixed;top: 200px;right: 0px;
+        }
         .mid{height: 200px;background-color: white;margin-top: 80px}
         .foot{height: 100px;background-color: black;margin-bottom: 0px}
     </style>
@@ -57,11 +81,30 @@
         <li class="nav-li">
             <a href="contact.html">联系我们</a>
         </li>
+
     </ul>
 
 </div>
-<img src="http://7xrrtk.com1.z0.glb.clouddn.com/17-10-24/44050808.jpg">
+<!--<div class="bgimg">-->
+    <!--&lt;!&ndash;<img src="http://7xrrtk.com1.z0.glb.clouddn.com/17-10-24/44050808.jpg">&ndash;&gt;-->
+<!--</div>-->
+<div class="contact1">
+    <img src="http://7xrrtk.com1.z0.glb.clouddn.com/17-10-26/13188059.jpg" alt="点击这里在线交谈">
+    <!--<a href="http://wpa.qq.com/msgrd?v=3&uin=34150166&site=qq&menu=yes">在<br>线<br>咨<br>询</a>-->
+</div>
+<div class="topban">
+    <div class="topban1">
+        <img src="http://7xrrtk.com1.z0.glb.clouddn.com/17-10-26/88761348.jpg">
+    <div class="topban2">
+        <div style="background-color: #2a2a2a;width: 300px;height: 55px;position: absolute">
+            <a style="color: white;font-size:20px;line-height:55px;margin-left: 10px;">合作企业</a>
+        </div>
+        <div>
+            <img src="http://7xrrtk.com1.z0.glb.clouddn.com/17-10-26/88672936.jpg">
+        </div>
 
+    </div>
+    </div>
 </div>
 <div class="mid">
     <a style="color: black;align-content: center">这里是正文</a>
