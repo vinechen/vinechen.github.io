@@ -9,37 +9,44 @@
         a:visited {  color: #000000; text-decoration: none}
         a:hover {  color: #000000; text-decoration: none}
         -->
-        body{margin: 0;padding: 0;background: url(http://7xrrtk.com1.z0.glb.clouddn.com/17-10-26/19190093.jpg) no-repeat;}
+        body{margin: 0 auto;
+            padding: 0;
+            width:100%;
+        }
         .top{height: 80px;
             width: 100%;
             top: 0px;
             position: fixed;
             background-color: white;
             /* for IE */
-            filter:alpha(opacity=95);
+            filter:alpha(opacity=80);
             /* CSS3 standard */
-            opacity:0.95;
-        z-index: 1;
+            opacity:0.8;
+            z-index: 1;
         }
         .nav-ul{
-            margin-left:-15px;
-            float:left;
             font-size: 18px;
             list-style: none;
             line-height:40px;
-            position: relative;
         }
 
         /*tab文字未固定*/
 
+
         .nav-ul a:hover{cursor:pointer;text-decoration:none!important}
         .nav-li{
             float: left;
-            margin:0 36px;
+            padding-left: 80px;
             height: 80px;
-            width: auto;
         }
-        .nav-li a:hover{color:blue;}
+        .nav-li a:hover{color:blue}
+
+        .topbg{
+            margin: 0 auto;
+            width: 100%;
+            height: 800px;
+        }
+
         .topban{
             width: 1200px;
             height: auto;
@@ -48,6 +55,7 @@
         }
         .topban1{
             position: relative;
+            float: left;
         }
         .topban2{
             background-color: white;
@@ -62,10 +70,12 @@
         .foot{height: 100px;background-color: black;margin-bottom: 0px}
     </style>
 </head>
-<body>
+<body style="background: url(http://7xrrtk.com1.z0.glb.clouddn.com/17-10-26/19190093.jpg) top center  repeat-x">
 <div class="top">
-    <img style="float: left;margin-left: 50px;margin-top: 10px" src="http://7xrrtk.com1.z0.glb.clouddn.com/newhopeicon.gif">
-    <ul class="nav-ul">
+    <ul class="nav-ul" style="margin-left: auto ">
+        <li class="nav-li">
+            <img src="http://7xrrtk.com1.z0.glb.clouddn.com/newhopeicon.gif">
+        </li>
         <li class="nav-li">
             <a href="index.html" style="color: blue">首页</a>
         </li>
@@ -85,16 +95,16 @@
     </ul>
 
 </div>
-<!--<div class="bgimg">-->
-    <!--&lt;!&ndash;<img src="http://7xrrtk.com1.z0.glb.clouddn.com/17-10-24/44050808.jpg">&ndash;&gt;-->
-<!--</div>-->
+
 <div class="contact1">
     <img src="http://7xrrtk.com1.z0.glb.clouddn.com/17-10-26/13188059.jpg" alt="点击这里在线交谈">
     <!--<a href="http://wpa.qq.com/msgrd?v=3&uin=34150166&site=qq&menu=yes">在<br>线<br>咨<br>询</a>-->
+
 </div>
 <div class="topban">
     <div class="topban1">
         <img src="http://7xrrtk.com1.z0.glb.clouddn.com/17-10-26/88761348.jpg">
+    </div>
     <div class="topban2">
         <div style="background-color: #2a2a2a;width: 300px;height: 55px;position: absolute">
             <a style="color: white;font-size:20px;line-height:55px;margin-left: 10px;">合作企业</a>
@@ -102,8 +112,6 @@
         <div>
             <img src="http://7xrrtk.com1.z0.glb.clouddn.com/17-10-26/88672936.jpg">
         </div>
-
-    </div>
     </div>
 </div>
 <div class="mid">
