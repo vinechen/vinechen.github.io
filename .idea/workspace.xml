@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4b6eb07-d918-4713-b6c2-63a6b3cf8408" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/yohopi/CNAME" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/yohopi/chunk-manifest.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/yohopi/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/yohopi/main.61526159e082f4475e5e.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/yohopi/vendors.85c8474aa0c73fa39e8b.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vinechen.github.io.iws" />
@@ -102,6 +107,12 @@
               <item name="vinechen.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="vinechen.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vinechen.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vinechen.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="yohopi" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -227,7 +238,7 @@
       <workItem from="1516589301763" duration="3042000" />
       <workItem from="1516592929239" duration="880000" />
       <workItem from="1516617269704" duration="5147000" />
-      <workItem from="1516679881256" duration="87000" />
+      <workItem from="1516679881256" duration="406000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1477270973395</created>
@@ -327,11 +338,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516679931108</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="beta1">
+      <created>1516679982837</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1516679982837</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106336000" />
+    <option name="totallyTimeSpent" value="106655000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1316" height="784" extended-state="6" />
