@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4b6eb07-d918-4713-b6c2-63a6b3cf8408" name="Default" comment="beta1">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/chunk-manifest.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/main.9d9f05e9e3361c6fdd62.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vendors.85c8474aa0c73fa39e8b.js" />
+    <list default="true" id="e4b6eb07-d918-4713-b6c2-63a6b3cf8408" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vinechen.github.io.iws" />
@@ -231,7 +227,7 @@
       <workItem from="1516589301763" duration="3042000" />
       <workItem from="1516592929239" duration="880000" />
       <workItem from="1516617269704" duration="5147000" />
-      <workItem from="1516679881256" duration="24000" />
+      <workItem from="1516679881256" duration="87000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1477270973395</created>
@@ -324,11 +320,18 @@
       <option name="project" value="LOCAL" />
       <updated>1509288286431</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="beta1">
+      <created>1516679931107</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1516679931108</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106273000" />
+    <option name="totallyTimeSpent" value="106336000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1316" height="784" extended-state="6" />
@@ -394,6 +397,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -430,6 +434,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -563,6 +568,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -584,6 +590,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -620,6 +627,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
