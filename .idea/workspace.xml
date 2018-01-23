@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4b6eb07-d918-4713-b6c2-63a6b3cf8408" name="Default" comment="beta1">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chunk-manifest.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main.9d9f05e9e3361c6fdd62.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendors.85c8474aa0c73fa39e8b.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/index.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vinechen.github.io.iws" />
@@ -41,6 +37,7 @@
     <findStrings>
       <find>bootstrap</find>
       <find>https://www.gstatic.com/images/branding/product/2x/translate_24dp.png</find>
+      <find>com</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -64,6 +61,7 @@
         <option value="$PROJECT_DIR$/app/BStest.jsx" />
         <option value="$PROJECT_DIR$/app/app/index.html" />
         <option value="$PROJECT_DIR$/app/app/index.jsx" />
+        <option value="$PROJECT_DIR$/../../Github desk/app/config/index.js" />
       </list>
     </option>
   </component>
@@ -232,7 +230,7 @@
       <workItem from="1516589301763" duration="3042000" />
       <workItem from="1516592929239" duration="880000" />
       <workItem from="1516617269704" duration="5147000" />
-      <workItem from="1516679881256" duration="1655000" />
+      <workItem from="1516679881256" duration="2306000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1477270973395</created>
@@ -353,11 +351,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516684295082</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="beta1">
+      <created>1516684428972</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1516684428972</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107904000" />
+    <option name="totallyTimeSpent" value="108555000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1316" height="784" extended-state="6" />
@@ -405,13 +410,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/calculator/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1064">
-          <caret line="56" column="31" lean-forward="false" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/404.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -744,6 +742,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Github desk/app/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="42" column="34" lean-forward="true" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
           <folding />
         </state>
       </provider>
