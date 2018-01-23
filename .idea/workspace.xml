@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4b6eb07-d918-4713-b6c2-63a6b3cf8408" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yohopi/CNAME" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yohopi/chunk-manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yohopi/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yohopi/main.61526159e082f4475e5e.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/yohopi/vendors.85c8474aa0c73fa39e8b.js" afterPath="" />
+    <list default="true" id="e4b6eb07-d918-4713-b6c2-63a6b3cf8408" name="Default" comment="beta1">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chunk-manifest.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main.9d9f05e9e3361c6fdd62.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendors.85c8474aa0c73fa39e8b.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/index.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vinechen.github.io.iws" />
@@ -28,18 +28,7 @@
     <favorites_list name="vinechen.github.io" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -243,7 +232,7 @@
       <workItem from="1516589301763" duration="3042000" />
       <workItem from="1516592929239" duration="880000" />
       <workItem from="1516617269704" duration="5147000" />
-      <workItem from="1516679881256" duration="1518000" />
+      <workItem from="1516679881256" duration="1655000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1477270973395</created>
@@ -357,11 +346,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516680305066</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="beta1">
+      <created>1516684295082</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1516684295082</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107767000" />
+    <option name="totallyTimeSpent" value="107904000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1316" height="784" extended-state="6" />
