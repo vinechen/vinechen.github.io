@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4b6eb07-d918-4713-b6c2-63a6b3cf8408" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wawa/hat1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wawa/hat2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wawa/hat3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wawa/hat4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wawa/hat5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wawa/hat6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wawa/hat7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wawa/hat8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wawa/hat9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wawa/fabric.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wawa/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wawa/index.html" afterPath="$PROJECT_DIR$/wawa/index.html" />
     </list>
     <ignored path="vinechen.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,12 +41,11 @@
         <entry file="file://$PROJECT_DIR$/wawa/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="341">
-              <caret line="94" column="8" lean-forward="true" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
+              <caret line="93" column="8" lean-forward="true" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -272,7 +261,7 @@
       <workItem from="1516592929239" duration="880000" />
       <workItem from="1516617269704" duration="5147000" />
       <workItem from="1516679881256" duration="2965000" />
-      <workItem from="1516791211228" duration="1963000" />
+      <workItem from="1516791211228" duration="2091000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1477270973395</created>
@@ -407,16 +396,24 @@
       <option name="project" value="LOCAL" />
       <updated>1516685078268</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="beta1">
+      <created>1516793631972</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1516793631972</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111177000" />
+    <option name="totallyTimeSpent" value="111305000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1316" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28230768" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28230768" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -767,12 +764,11 @@
     <entry file="file://$PROJECT_DIR$/wawa/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
-          <caret line="94" column="8" lean-forward="true" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
+          <caret line="93" column="8" lean-forward="true" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
           <folding>
             <element signature="n#style#0;n#input#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
