@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4b6eb07-d918-4713-b6c2-63a6b3cf8408" name="Default" comment="beta1">
+    <list default="true" id="e4b6eb07-d918-4713-b6c2-63a6b3cf8408" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wawa/index.html" afterPath="$PROJECT_DIR$/wawa/index.html" />
     </list>
@@ -40,8 +40,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wawa/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="47" column="18" lean-forward="false" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+            <state relative-caret-position="384">
+              <caret line="183" column="65" lean-forward="true" selection-start-line="183" selection-start-column="65" selection-end-line="183" selection-end-column="65" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -65,8 +65,8 @@
       <file leaf-file-name="fabric.min.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wawa/fabric.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196156">
-              <caret line="10324" column="12" lean-forward="false" selection-start-line="10324" selection-start-column="12" selection-end-line="10324" selection-end-column="12" />
+            <state relative-caret-position="225">
+              <caret line="2526" column="68" lean-forward="false" selection-start-line="2526" selection-start-column="64" selection-end-line="2526" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -85,14 +85,20 @@
     <findStrings>
       <find>bootstrap</find>
       <find>https://www.gstatic.com/images/branding/product/2x/translate_24dp.png</find>
-      <find>com</find>
       <find>300</find>
       <find>upload</find>
       <find>250</find>
       <find>canvas</find>
       <find>scalex</find>
-      <find>export</find>
       <find>height</find>
+      <find>header</find>
+      <find>body</find>
+      <find>com</find>
+      <find>.com</find>
+      <find>cvs</find>
+      <find>style</find>
+      <find>uploadT</find>
+      <find>export</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -296,7 +302,7 @@
       <workItem from="1516679881256" duration="2965000" />
       <workItem from="1516791211228" duration="2116000" />
       <workItem from="1516805241877" duration="3186000" />
-      <workItem from="1516847785241" duration="14821000" />
+      <workItem from="1516847785241" duration="22901000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1477270973395</created>
@@ -487,11 +493,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516864295649</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="beta1">
+      <created>1516865213253</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1516865213253</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129337000" />
+    <option name="totallyTimeSpent" value="137417000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1316" height="784" extended-state="6" />
@@ -825,14 +838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wawa/fabric.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196156">
-          <caret line="10324" column="12" lean-forward="false" selection-start-line="10324" selection-start-column="12" selection-end-line="10324" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -841,10 +846,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wawa/fabric.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="2526" column="68" lean-forward="false" selection-start-line="2526" selection-start-column="64" selection-end-line="2526" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wawa/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="47" column="18" lean-forward="false" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+        <state relative-caret-position="384">
+          <caret line="183" column="65" lean-forward="true" selection-start-line="183" selection-start-column="65" selection-end-line="183" selection-end-column="65" />
           <folding>
             <element signature="n#style#0;n#input#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />

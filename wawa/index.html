@@ -7,7 +7,7 @@
   <title>加个蛙</title>
   <style>
     body {
-      font-size: 20px;
+      font-size: 18px;
       text-align: center;
       margin: 0;
     }
@@ -33,12 +33,12 @@
     }
     .body {
       margin: 4rem auto 3rem;
-      height: 10rem;
-      width: 10rem;
+      height: 3rem;
+      width: 6rem;
       border: solid 1px #aaa;
       box-shadow: 0 0 5px #aaa;
       border-radius: 1rem;
-      line-height: 10rem;
+      line-height: 2.7rem;
       position: relative;
     }
     #export {
@@ -68,9 +68,9 @@
   </div>
   <div class='body' id='uploadContainer'>
     <small id='uploadText'>上传照片</small>
-    <input id='upload' type='file' onchange='viewer()' style='height: 10rem; width: 10rem; position: absolute; top: 0; left: 0; opacity: 0'>
+    <input id='upload' type='file' onchange='viewer()' style='height: 3rem; width: 6rem; position: absolute; top: 0; left: 0; opacity: 0'>
   </div>
-  <img id='export' alt='快乐' src='' />
+  <img id='export' alt='坏了' src='' />
   <canvas id='cvs'></canvas>
   <p id='tip' style='opacity: 0'>点击蛙蛙调整位置和大小</p>
   <div class='footer'>
@@ -93,7 +93,7 @@
       <img class='hide' id='hat9' src='./hat9.png' />
   </div>
 
-  <script src="https://cdn.bootcss.com/fabric.js/2.0.0-rc.3/fabric.min.js"></script>
+  <script src="fabric.min.js"></script>
 <script>
     var cvs = document.getElementById("cvs");
     var ctx = cvs.getContext("2d");
@@ -127,6 +127,8 @@
         }
     }
     function img2Cvs(img) {
+        document.getElementById("title2").innerHTML ="点击蛙蛙调整位置和大小";
+
         cvs.width = img.width;
         cvs.height = img.height;
         cvs.style.display = "block";
@@ -134,7 +136,6 @@
         canvasFabric = new fabric.Canvas("cvs", {
             width: screenWidth,
             height: screenWidth * img.height / img.width,
-
             backgroundImage: new fabric.Image(img, {
                 scaleX: screenWidth / img.width,
                 scaleY: screenWidth  / img.width
@@ -178,14 +179,14 @@
     function exportFunc() {
         document.getElementsByClassName("canvas-container")[0].style.display = "none";
         document.getElementById("exportBtn").style.display = "none";
-        document.getElementById("tip").innerHTML = "长按图片保存！";
+        document.getElementById("tip").innerHTML = "赶紧奔走相告！";
         document.getElementById("title2").innerHTML ="长按图片保存";
         document.getElementById("change").style.display = "none";
         cvs.style.display = "none";
         exportImage.style.display = "block";
         exportImage.src = canvasFabric.toDataURL({
             width: screenWidth,
-            height: screenHeight
+            height: screenWidth * img.height / img.width
         })
     }
 </script>
