@@ -3,7 +3,7 @@
 <head>
   <meta charset='UTF-8'>
     <meta http-equiv=X-UA-Compatible content="chrome=1,IE=Edge">
-    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1, minimum-scale=0.2, maximum-scale=5.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=0.2, maximum-scale=5.0, user-scalable=yes">
   <title>加个蛙</title>
   <style>
     body {
@@ -106,14 +106,8 @@
 
     var ImageU1=document.getElementById("upload");
 
-//    //读取图片的尺寸
-//    var image2=ImageU1.files;
-//            ImageWidth1=image2.width;
-//            ImageHeight1=image2.height;
-
     var screenWidth = window.screen.width;
     var screenHeight= window.screen.height;
-
 
     function viewer() {
         var file = document.getElementById("upload").files[0];
@@ -136,12 +130,14 @@
         cvs.width = img.width;
         cvs.height = img.height;
         cvs.style.display = "block";
+        //框的大小
         canvasFabric = new fabric.Canvas("cvs", {
             width: screenWidth,
-            height: screenHeight,
+            height: screenWidth * img.height / img.width,
+
             backgroundImage: new fabric.Image(img, {
                 scaleX: screenWidth / img.width,
-                scaleY: screenHeight / img.height
+                scaleY: screenWidth  / img.width
             })
         });
         changeHat();
