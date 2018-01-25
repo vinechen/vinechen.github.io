@@ -44,8 +44,8 @@
     #export {
       display: none;
       margin: 0 auto;
-      /*width: 250px;*/
-      /*height: 250px;*/
+      width: 100%;
+      height: auto;
     }
     .footer {
       display: flex;
@@ -64,7 +64,7 @@
 </head>
 <body>
   <div class='header'>
-    <h2>给照片加上蛙蛙</h2>
+    <h2 id="title2">给照片加上蛙蛙</h2>
   </div>
   <div class='body' id='uploadContainer'>
     <small id='uploadText'>上传照片</small>
@@ -178,7 +178,8 @@
     function exportFunc() {
         document.getElementsByClassName("canvas-container")[0].style.display = "none";
         document.getElementById("exportBtn").style.display = "none";
-        document.getElementById("tip").innerHTML = "长按图片保存或分享";
+        document.getElementById("tip").innerHTML = "长按图片保存！";
+        document.getElementById("title2").innerHTML ="长按图片保存";
         document.getElementById("change").style.display = "none";
         cvs.style.display = "none";
         exportImage.style.display = "block";
