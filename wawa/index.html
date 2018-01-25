@@ -27,12 +27,13 @@
     }
     .canvas-container {
       margin: 0 auto;
+        height: auto;
     }
     .hide, #exportBtn {
       display: none;
     }
     .body {
-      margin: 4rem auto 3rem;
+      margin: 6rem auto 3rem;
       height: 3rem;
       width: 6rem;
       border: solid 1px #aaa;
@@ -50,11 +51,12 @@
     .footer {
       display: flex;
       justify-content: space-around;
+        padding: 20px;
     }
     button {
-      font-size: 18px;
+      font-size: 17px;
       color: #fff;
-      padding: 0 30px;
+      padding: 20px 30px;
       height: 2.3rem;
       background: #8fd16f;
       border: 0;
@@ -71,13 +73,13 @@
     <input id='upload' type='file' onchange='viewer()' style='height: 3rem; width: 6rem; position: absolute; top: 0; left: 0; opacity: 0'>
   </div>
   <img id='export' alt='坏了' src='' />
-  <canvas id='cvs'></canvas>
-  <p id='tip' style='opacity: 0'>点击蛙蛙调整位置和大小</p>
+  <!--<p id='tip' style='opacity: 0'>点击蛙蛙调整位置和大小</p>-->
   <div class='footer'>
-    <button id='change' onClick='changeHat()' style='display: none;'>换一只蛙</button>
-    <button id='exportBtn' onClick='exportFunc()'>生成照片</button>
-    <!-- <a onClick='reUpload()'>重来</a> -->
+      <button id='change' onClick='changeHat()' style='display: none;line-height: 5px'>换一只蛙</button>
+      <button id='exportBtn' onClick='exportFunc()' style='line-height:5px'>生成照片</button>
+      <!-- <a onClick='reUpload()'>重来</a> -->
   </div>
+  <canvas id='cvs'></canvas>
 <BR>
   <div style='display: none'>
     <img id='img' src='' alt='' />
@@ -147,7 +149,7 @@
         document.getElementById("upload").style.display = "none";
         document.getElementById("change").style.display = "block";
         document.getElementById("exportBtn").style.display = "block";
-        document.getElementById("tip").style.opacity = 1
+//        document.getElementById("tip").style.opacity = 1;
     }
     function changeHat() {
         document.getElementById(hat).style.display = "none";
@@ -179,7 +181,7 @@
     function exportFunc() {
         document.getElementsByClassName("canvas-container")[0].style.display = "none";
         document.getElementById("exportBtn").style.display = "none";
-        document.getElementById("tip").innerHTML = "赶紧奔走相告！";
+//        document.getElementById("tip").innerHTML = "赶紧奔走相告！";
         document.getElementById("title2").innerHTML ="长按图片保存";
         document.getElementById("change").style.display = "none";
         cvs.style.display = "none";
@@ -190,5 +192,7 @@
         })
     }
 </script>
+  <div style="bottom: 10px;position:relative;font-size: 14px;color: #aaaaaa" >微信公众号：福建高校(ID:fjgaoxiao)  随便制作的</div>
 </body>
+
 </html>
