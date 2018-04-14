@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 给鲜城提的一些交互上的建议
-excerpt: 发现不一样的橙 城
+excerpt: 鲜城：本地吃喝玩乐精选推荐
 published: true
 date: 2016-08-21
 project: true
