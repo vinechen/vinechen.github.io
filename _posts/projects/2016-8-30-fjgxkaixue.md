@@ -2,7 +2,7 @@
 layout: post
 title: 福建高校开学季
 date: 2016-08-30
-excerpt: "开学啦"
+excerpt: "开学季发放带商家广告的校历达到推广目的"
 tags: [福建高校]
 project: true
 comments: true
