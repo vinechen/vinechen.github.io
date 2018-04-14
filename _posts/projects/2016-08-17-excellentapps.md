@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 整理的一些实用的小工具
-excerpt: 多是小众应用，不过实用
+excerpt: 收集工作和学习中小众而实用的应用
 published: true
 date: 2016-04-23
 comments: true
@@ -26,6 +26,7 @@ feature: http://img.vinechen.com/16-8-19/69050931.jpg
 | 1clipboard | 剪贴板管理应用     | 49.5M  | [Download>](http://1clipboard.io)        |
 | PicPick    | 截图工具        | 12.56M | [Download>](http://ngwin.com/picpick/download_start) |
 | Ccleaner   | 优化软件        | 7.15M  | [Download>](http://www.piriform.com/ccleaner) |
+| everything   | 本地硬盘搜索利器        | 几百 k | [Download>](http://www.google.com) |
 
 ## **Mac应用**
 
