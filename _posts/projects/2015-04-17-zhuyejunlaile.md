@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 主页菌来了视频合辑
-excerpt: 校园街头采访视频
+title: 主页菌来了校园街头采访视频合辑
+excerpt: 负责前期策划和剧情设计
 published: true
 date: 2015-04-17
 comments: true
