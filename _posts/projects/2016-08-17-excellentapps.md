@@ -40,5 +40,6 @@ feature: http://img.vinechen.com/16-8-19/69050931.jpg
 | :----- | :--------- | :--------------------------- |
 | 硕鼠Nano | 在线视频下载链接提取 | [Go>](http://www.flvcd.com/) |
 | 画图     | 在线画图       | [Go>](https://www.draw.io/)  |
-|        |            | [ ](http://www.waitsun.com)  |
-
+| 不知道什么| 看一看    | [Go>](http://www.waitsun.com)  |
+| logo&icon|看一看  | [Go>](https://www.draw.io/)  |
+| 二维码转换| 看一看   | [Go>](http://iconfont.cn/)  |
