@@ -27,6 +27,7 @@ feature: http://img.vinechen.com/16-8-19/69050931.jpg
 | PicPick    | 截图工具        | 12.56M | [Download>](http://ngwin.com/picpick/download_start) |
 | Ccleaner   | 优化软件        | 7.15M  | [Download>](http://www.piriform.com/ccleaner) |
 | everything   | 本地硬盘搜索利器        | 几百 k | [Download>](http://www.google.com) |
+| 批量重命名工具  | 批量重命名工具| 几兆 | [Download>](http://img.vinechen.com/tool/piliangchongmingming.exe) |
 
 ## **Mac应用**
 
