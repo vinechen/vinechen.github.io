@@ -10,7 +10,7 @@ project: true
 feature: http://img.vinechen.com/16-8-19/69050931.jpg
 ---
 ```html
-为了方便工作和学习，整理了以下一些小应用，大家也可以在评论中分享自己使用的类似应用 :）
+为了方便工作和学习，整理了以下一些小应用 :）
 ```
 
 
@@ -42,5 +42,7 @@ feature: http://img.vinechen.com/16-8-19/69050931.jpg
 | 硕鼠Nano | 在线视频下载链接提取 | [Go>](http://www.flvcd.com/) |
 | 画图     | 在线画图       | [Go>](https://www.draw.io/)  |
 | 不知道什么| 看一看    | [Go>](http://www.waitsun.com)  |
-| logo&icon|看一看  | [Go>](https://www.draw.io/)  |
-| 二维码转换| 看一看   | [Go>](http://iconfont.cn/)  |
+| 在线画板|在线手绘板  | [Go>](https://www.draw.io/)  |
+| logo&icon| 各种icon | [Go>](http://iconfont.cn/)  |
+| 二维码转换| 各种样式的二维码 | [Go>](http://www.liantu.com/)  |
+| logo生成| AI帮你画个logo | [Go>](https://www.logosc.cn) or [this one>](https://logojoy.com) |
