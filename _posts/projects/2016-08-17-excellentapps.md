@@ -46,3 +46,4 @@ feature: http://img.vinechen.com/16-8-19/69050931.jpg
 | logo&icon| 各种icon | [Go>](http://iconfont.cn/)  |
 | 二维码转换| 各种样式的二维码 | [Go>](http://www.liantu.com/)  |
 | logo生成| AI帮你画个logo | [Go>](https://www.logosc.cn) or [this one>](https://logojoy.com) |
+| 包图网| 配乐 | [Go>](https://ibaotu.com/peiyue/)  |
