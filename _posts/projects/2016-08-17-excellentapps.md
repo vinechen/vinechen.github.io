@@ -28,6 +28,7 @@ feature: http://img.vinechen.com/16-8-19/69050931.jpg
 | Ccleaner   | 优化软件        | 7.15M  | [Download>](http://www.piriform.com/ccleaner) |
 | everything   | 本地硬盘搜索利器        | 几百 k | [Download>](http://www.google.com) |
 | 批量重命名工具  | 批量重命名工具| 几兆 | [Download>](http://img.vinechen.com/tool/piliangchongmingming.exe) |
+| txt文件分割  | 分割txt文件| 600kb | [Download>](http://img.vinechen.com/software/tianshitxt.exe) |
 
 ## **Mac应用**
 
