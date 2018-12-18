@@ -49,3 +49,10 @@ feature: http://img.vinechen.com/16-8-19/69050931.jpg
 | logo生成| AI帮你画个logo | [Go>](https://www.logosc.cn) or [this one>](https://logojoy.com) |
 | 包图网| 配乐 | [Go>](https://ibaotu.com/peiyue/)  |
 | UZER.ME| 在线PS、AI、PPT | [Go>](https://uzer.me/)  |
+| OCR| 图片文字识别 | [Go>](https://www.iamwawa.cn/ocr.html)  |
+
+## **皮一下**
+
+| Name   | Use        | Link                         |
+| :----- | :--------- | :--------------------------- |
+| fakeupdate | 假装在升级Windows系统 | [Go>](http://fakeupdate.net) |
