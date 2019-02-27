@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 整理的一些实用的小工具
+title: [updating]整理的一些实用的小工具
 excerpt: 收集工作和学习中小众而实用的应用
 published: true
-date: 2016-04-23
+date: 2019-02-23
 comments: true
 published: true
 project: true
@@ -50,6 +50,7 @@ feature: http://img.vinechen.com/16-8-19/69050931.jpg
 | 包图网| 配乐 | [Go>](https://ibaotu.com/peiyue/)  |
 | UZER.ME| 在线PS、AI、PPT | [Go>](https://uzer.me/)  |
 | OCR| 图片文字识别 | [Go>](https://www.iamwawa.cn/ocr.html)  |
+| 视频转gif| 将视频中的部分帧转为gif动态图 | [Go>](http://app.xunjiepdf.com/video2gif/)  |
 
 ## **皮一下**
 
