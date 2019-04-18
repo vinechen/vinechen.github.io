@@ -51,6 +51,8 @@ feature: http://img.vinechen.com/16-8-19/69050931.jpg
 | UZER.ME| 在线PS、AI、PPT | [Go>](https://uzer.me/)  |
 | 视频转Gif| 将视频中的部分帧转为gif动态图 | [Go>](http://app.xunjiepdf.com/video2gif/)  |
 | OCR| 图片文字识别 | [Go>](https://www.iamwawa.cn/ocr.html)  |
+| pdf缩小| 减少pdf所占内存 | [Go>](https://smallpdf.com/cn/compress-pdf)  |
+
 
 ## **皮一下**
 
