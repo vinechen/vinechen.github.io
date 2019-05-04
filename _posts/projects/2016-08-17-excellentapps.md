@@ -42,16 +42,6 @@ feature: http://img.vinechen.com/16-8-19/69050931.jpg
 | :----- | :--------- | :--------------------------- |
 | 硕鼠Nano | 在线视频下载链接提取 | [Go>](http://www.flvcd.com/) |
 | 画图     | 在线画图       | [Go>](https://www.draw.io/)  |
-| 不知道什么|看一看| [Go>](http://www.waitsun.com)  |
-| 在线画板|在线手绘板  | [Go>](https://www.draw.io/)  |
-| logo&icon| 各种icon | [Go>](http://iconfont.cn/)  |
-| 二维码转换| 各种样式的二维码 | [Go>](http://www.liantu.com/)  |
-| logo生成| AI帮你画个logo | [Go>](https://www.logosc.cn) or [this one>](https://logojoy.com) |
-| 包图网| 配乐 | [Go>](https://ibaotu.com/peiyue/)  |
-| UZER.ME| 在线PS、AI、PPT | [Go>](https://uzer.me/)  |
-| 视频转Gif|将视频中的部分帧转为gif动态图|[Go>](http://app.xunjiepdf.com/video2gif/)  |
-| OCR| 图片文字识别 | [Go>](https://www.iamwawa.cn/ocr.html)  |
-| pdf缩小| 减少pdf所占内存 | [Go>](https://smallpdf.com/cn/compress-pdf)  |
 
 
 ## **皮一下**
@@ -59,9 +49,3 @@ feature: http://img.vinechen.com/16-8-19/69050931.jpg
 | Name   | Use        | Link                         |
 | :----- | :--------- | :--------------------------- |
 | fakeupdate | 假装在升级Windows系统 | [Go>](http://fakeupdate.net) |
-
-## **工具**
-
-| Name   | Use        | Link                         |
-| :----- | :--------- | :--------------------------- |
-| YAML排错 | 规范YAML格式 | [Go>](http://www.yamllint.com/) |
