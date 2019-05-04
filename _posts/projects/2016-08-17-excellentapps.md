@@ -7,8 +7,64 @@ date: 2019-04-17
 comments: true
 published: true
 project: true
-feature: http://wx1.sinaimg.cn/mw690/75a8adb7ly1fg7yx96bjsj20rj0fhdu2.jpg
+feature: http://img.vinechen.com/16-8-19/69050931.jpg
 ---
 ```html
 #主页菌来了#校园街头采访视频系微博团队成员精心拍摄并剪辑的视频 :）
 ```
+```html
+为了方便工作和学习，整理了以下一些小应用 :）
+```
+
+
+
+## **Window应用**
+
+| Name       | Use         | Size   | Link                                     |
+| :--------- | :---------- | :----- | :--------------------------------------- |
+| Typora     | MarkDown编辑器 | 33.3M  | [Download>](http://img.vinechen.com/typora-setup.exe) |
+| Gifcam     | 动态图捕捉       | 1.52M  | [Download>](http://img.vinechen.com/GifCam.exe) |
+| Potplayer  | 视频播放器       | 19.5M  | [Download>](http://potplayer.daum.net/?lang=zh_CN) |
+| Instapaper | 优秀的稍后阅读应用   | ……     | ……                                       |
+| 1clipboard | 剪贴板管理应用     | 49.5M  | [Download>](http://1clipboard.io)        |
+| PicPick    | 截图工具        | 12.56M | [Download>](http://ngwin.com/picpick/download_start) |
+| Ccleaner   | 优化软件        | 7.15M  | [Download>](http://www.piriform.com/ccleaner) |
+| everything   | 本地硬盘搜索利器        | 几百 k | [Download>](http://www.google.com) |
+| 批量重命名工具  | 批量重命名工具| 几兆 | [Download>](http://img.vinechen.com/tool/piliangchongmingming.exe) |
+| txt文件分割  | 分割txt文件| 600kb | [Download>](http://img.vinechen.com/software/tianshitxt.exe) |
+
+## **Mac应用**
+
+| Name | Use  | Size | Link                             |
+| :--- | :--- | :--- | :------------------------------- |
+| Snip | 截图工具 | 2.5M | [Download>](http://snip.qq.com/) |
+
+## **Web应用**
+
+| Name   | Use        | Link                         |
+| :----- | :--------- | :--------------------------- |
+| 硕鼠Nano | 在线视频下载链接提取 | [Go>](http://www.flvcd.com/) |
+| 画图     | 在线画图       | [Go>](https://www.draw.io/)  |
+| 不知道什么|看一看| [Go>](http://www.waitsun.com)  |
+| 在线画板|在线手绘板  | [Go>](https://www.draw.io/)  |
+| logo&icon| 各种icon | [Go>](http://iconfont.cn/)  |
+| 二维码转换| 各种样式的二维码 | [Go>](http://www.liantu.com/)  |
+| logo生成| AI帮你画个logo | [Go>](https://www.logosc.cn) or [this one>](https://logojoy.com) |
+| 包图网| 配乐 | [Go>](https://ibaotu.com/peiyue/)  |
+| UZER.ME| 在线PS、AI、PPT | [Go>](https://uzer.me/)  |
+| 视频转Gif|将视频中的部分帧转为gif动态图|[Go>](http://app.xunjiepdf.com/video2gif/)  |
+| OCR| 图片文字识别 | [Go>](https://www.iamwawa.cn/ocr.html)  |
+| pdf缩小| 减少pdf所占内存 | [Go>](https://smallpdf.com/cn/compress-pdf)  |
+
+
+## **皮一下**
+
+| Name   | Use        | Link                         |
+| :----- | :--------- | :--------------------------- |
+| fakeupdate | 假装在升级Windows系统 | [Go>](http://fakeupdate.net) |
+
+## **工具**
+
+| Name   | Use        | Link                         |
+| :----- | :--------- | :--------------------------- |
+| YAML排错 | 规范YAML格式 | [Go>](http://www.yamllint.com/) |
