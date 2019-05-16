@@ -67,5 +67,5 @@ feature: http://img.vinechen.com/16-8-19/69050931.jpg
 ## 工具
 
 | Name   | Use        | Link      |
-| :----- | :--------- | :-   ---- |
+| :----- | :--------- | :-------- |
 | YAML排错 | 规范YAML格式 | [Go>](http://www.yamllint.com/) |
