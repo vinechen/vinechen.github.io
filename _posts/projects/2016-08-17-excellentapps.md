@@ -50,6 +50,11 @@ feature: http://img.vinechen.com/16-8-19/69050931.jpg
 | 视频转Gif|将视频中的部分帧转为gif动态图|[Go>](http://app.xunjiepdf.com/video2gif/)  |
 | OCR| 图片文字识别 | [Go>](https://www.iamwawa.cn/ocr.html)  |
 | pdf缩小| 减少pdf所占内存 | [Go>](https://smallpdf.com/cn/compress-pdf)  |
+| Adobe软件| 有能力请支持正版（狗头） | [Go>](https://xclient.info)  |
+| 在线视频格式转换| 好像是Chrome推荐的 | [Go>](https://convert-video-online.com/)  |
+| 腾讯智图| 图片优化（压缩）平台 | [Go>](https://zhitu.isux.us/)  |
+| pdf一站式工具| 包括转换和编辑 | [Go>](https://www.hipdf.cn/)  |
+
 
 
 ## **皮一下**
