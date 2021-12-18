@@ -1,0 +1,25 @@
+---
+label: posttt
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: text
+  name: excerpt
+  label: excerpt
+- type: datetime
+  name: date
+  label: date
+- type: boolean
+  name: comments
+  label: comments
+- type: boolean
+  name: project
+  label: project
+- type: file
+  name: feature
+  label: feature
