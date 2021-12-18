@@ -6,7 +6,7 @@ excerpt: "开学季发放带商家广告的校历达到推广目的"
 tags: [福建高校]
 project: true
 comments: true
-published: true
+published: false
 ---
 ```php
 福建高校开学季
