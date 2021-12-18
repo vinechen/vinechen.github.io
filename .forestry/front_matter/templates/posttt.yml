@@ -23,3 +23,5 @@ fields:
 - type: file
   name: feature
   label: feature
+pages:
+- _posts/抄书/test.md
