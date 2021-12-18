@@ -3,9 +3,10 @@ layout: post
 title: 如何优雅地观赏8.12英仙座流星雨
 date: 2016-08-11
 excerpt: "较实用的流星雨观赏指南"
-tags: [翻译作品]
+tags: [翻译]
 comments: true
 published: true
+project:true
 feature: http://img.vinechen.com/16-8-19/59890152.jpg
 
 ---
@@ -64,9 +65,6 @@ feature: http://img.vinechen.com/16-8-19/59890152.jpg
 
 ------
 
-版权声明：
-
-文章由我和我的小伙伴们翻译，首发于**福建高校** 微信公众号
 
 原文标题：《wikiHow to Watch the Perseid Meteor Shower》
 
